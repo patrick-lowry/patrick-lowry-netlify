@@ -14,9 +14,9 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      Senior Technical Executive, Experienced Solution Architect, Technology Delivery Lead....... who also ships code.
+      Senior IT Executive and Solution Architect........ who also ships code.
     subtitle: >-
-      Experienced technical executive with a focus on hands-on delivery, architecture and engineering.
+      Experienced technical executive with many years hands-on delivery, architecture and engineering. To lead technical delivery effectively - you should know how to code!
     styles:
       self:
         height: auto
