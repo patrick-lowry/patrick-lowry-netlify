@@ -10,13 +10,13 @@ backgroundImage:
   backgroundRepeat: no-repeat
   opacity: 75
 sections:
-  - elementId: ''
+  - elementId: ""
     colors: colors-f
     backgroundSize: full
-    title: >-
-      Senior IT Executive and Solution Architect........ who also ships code.
-    subtitle: >-
-      Experienced technical executive with many years hands-on delivery, architecture and engineering. To lead technical delivery effectively - you should know how to code!
+    title: Keep Learning, Keep Engineering.....
+    subtitle: I'm an IT executive with many years hands-on delivery and solution
+      architecture experience across multiple industries. But at heart I'm an
+      engineer.......
     styles:
       self:
         height: auto
@@ -35,22 +35,7 @@ sections:
         textAlign: left
     type: HeroSection
     actions: []
-  - colors: colors-f
-    type: FeaturedProjectsSection
-    elementId: ''
-    actions:
-      - type: Link
-        label: See all projects
-        url: /projects
-    showDate: false
-    showDescription: true
-    showFeaturedImage: true
-    showReadMoreLink: true
-    variant: variant-b
-    projects:
-      - content/pages/projects/project-two.md
-      - content/pages/projects/project-three.md
-      - content/pages/projects/project-one.md
+  - showReadMoreLink: true
     styles:
       self:
         height: auto
@@ -61,24 +46,23 @@ sections:
           - pl-4
           - pr-4
         textAlign: left
-    subtitle: Projects
-  - type: FeaturedPostsSection
-    elementId: ''
+    variant: variant-b
+    showDate: false
     colors: colors-f
-    variant: variant-d
-    subtitle: Featured Posts
-    showFeaturedImage: false
+    showFeaturedImage: true
+    elementId: ""
+    subtitle: Projects
+    projects:
+      - content/pages/projects/project-two.md
+      - content/pages/projects/project-three.md
+      - content/pages/projects/project-one.md
+    type: FeaturedProjectsSection
     actions:
       - type: Link
-        label: See all posts
-        url: /blog
-    posts:
-      - content/pages/blog/post-six.md
-      - content/pages/blog/post-four.md
-      - content/pages/blog/post-three.md
-    showDate: true
-    showExcerpt: true
-    showReadMoreLink: true
+        label: See all projects
+        url: /projects
+    showDescription: true
+  - showReadMoreLink: true
     styles:
       self:
         height: auto
@@ -89,10 +73,26 @@ sections:
           - pl-4
           - pr-4
         textAlign: left
+    showExcerpt: true
+    variant: variant-d
+    showDate: true
+    colors: colors-f
+    showFeaturedImage: false
+    posts:
+      - content/pages/blog/post-six.md
+      - content/pages/blog/post-four.md
+      - content/pages/blog/post-three.md
+    elementId: ""
+    subtitle: Featured Posts
+    type: FeaturedPostsSection
+    actions:
+      - type: Link
+        label: See all posts
+        url: /blog
   - type: ContactSection
     colors: colors-f
     backgroundSize: full
-    title: "Got an interesting project? Tell me more...\U0001F4AC"
+    title: Got an interesting project? Tell me more...💬
     form:
       type: FormBlock
       elementId: sign-up-form
@@ -130,7 +130,7 @@ sections:
           isRequired: false
           width: full
           type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
+      submitLabel: Submit 🚀
       styles:
         self:
           textAlign: center
