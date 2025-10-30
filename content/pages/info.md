@@ -14,10 +14,11 @@ sections:
     colors: colors-f
     backgroundSize: full
     text: >+
-      # Hey I’m a developer. I’ve been born and raised in the world, and that’s
-      also where I’m based. I’m currently a free agent, ex-this, ex-that,
-      ex-super big name. When I’m not coding, writing or creating, I eat
-      cereals. I have a dog, check her out [@mygod](https://www.stackbit.com/).
+      # Senior Technical Executive & Solution Architect
+
+      I'm Patrick Lowry, Associate Director at Accenture with 25+ years of
+      experience bridging the gap between enterprise strategy and hands-on
+      technical delivery. I don't just architect solutions—I build them.
 
     media:
       type: ImageBlock
@@ -180,21 +181,29 @@ sections:
     subtitle: 'Skills:'
     items:
       - type: Label
-        label: 'WEB 1, 2, 3'
+        label: Python
       - type: Label
-        label: React
+        label: Machine Learning
       - type: Label
-        label: Microsoft Office
+        label: React/Next.js
       - type: Label
-        label: Next.js
+        label: FastAPI
       - type: Label
-        label: Netlify
+        label: PostgreSQL
       - type: Label
-        label: Pancakes
+        label: AWS/Azure
       - type: Label
-        label: C++
+        label: Docker/Kubernetes
       - type: Label
-        label: Swift
+        label: Data Science
+      - type: Label
+        label: Computer Vision
+      - type: Label
+        label: NLP/Transformers
+      - type: Label
+        label: Solution Architecture
+      - type: Label
+        label: Technical Leadership
   - type: DividerSection
     styles:
       self:

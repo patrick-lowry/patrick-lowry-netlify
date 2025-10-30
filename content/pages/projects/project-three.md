@@ -1,11 +1,11 @@
 ---
 type: ProjectLayout
-title: One more cool project
+title: Non Linear Classification with Kernels
 colors: colors-a
-date: '2022-01-22'
-client: Awesome client
+date: '2024-08-10'
+client: Academic Research
 description: >-
-  It’s hard to imagine that I’ve that I wrote all this code by myself, probably because I worked with an entire team :) but they definitely followed my lead most of the time.
+  Implementation of advanced kernel methods for non-linear classification problems using SVM, RBF, and custom kernel functions with performance optimization.
 featuredImage:
   type: ImageBlock
   url: /images/bg3.jpg

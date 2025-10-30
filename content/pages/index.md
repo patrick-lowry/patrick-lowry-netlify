@@ -35,7 +35,25 @@ sections:
         textAlign: left
     type: HeroSection
     actions: []
-  - showReadMoreLink: true
+  - colors: colors-f
+    type: FeaturedProjectsSection
+    elementId: ''
+    actions:
+      - type: Link
+        label: See all projects
+        url: /projects
+    showDate: false
+    showDescription: true
+    showFeaturedImage: true
+    showReadMoreLink: true
+    variant: variant-b
+    projects:
+      - content/pages/projects/project-one.md
+      - content/pages/projects/project-two.md
+      - content/pages/projects/project-three.md
+      - content/pages/projects/image-stitching-homography.md
+      - content/pages/projects/hugging-face-agents.md
+      - content/pages/projects/pixel-classification-bayes.md
     styles:
       self:
         height: auto
@@ -46,108 +64,5 @@ sections:
           - pl-4
           - pr-4
         textAlign: left
-    variant: variant-b
-    showDate: false
-    colors: colors-f
-    showFeaturedImage: true
-    elementId: ""
     subtitle: Projects
-    projects:
-      - content/pages/projects/project-two.md
-      - content/pages/projects/project-three.md
-      - content/pages/projects/project-one.md
-    type: FeaturedProjectsSection
-    actions:
-      - type: Link
-        label: See all projects
-        url: /projects
-    showDescription: true
-  - showReadMoreLink: true
-    styles:
-      self:
-        height: auto
-        width: narrow
-        padding:
-          - pt-28
-          - pb-48
-          - pl-4
-          - pr-4
-        textAlign: left
-    showExcerpt: true
-    variant: variant-d
-    showDate: true
-    colors: colors-f
-    showFeaturedImage: false
-    posts:
-      - content/pages/blog/post-six.md
-      - content/pages/blog/post-four.md
-      - content/pages/blog/post-three.md
-    elementId: ""
-    subtitle: Featured Posts
-    type: FeaturedPostsSection
-    actions:
-      - type: Link
-        label: See all posts
-        url: /blog
-  - type: ContactSection
-    colors: colors-f
-    backgroundSize: full
-    title: Got an interesting project? Tell me more...💬
-    form:
-      type: FormBlock
-      elementId: sign-up-form
-      fields:
-        - name: firstName
-          label: First Name
-          hideLabel: true
-          placeholder: First Name
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
-          width: 1/2
-          type: TextFormControl
-        - name: email
-          label: Email
-          hideLabel: true
-          placeholder: Email
-          isRequired: true
-          width: 1/2
-          type: EmailFormControl
-        - name: address
-          label: Address
-          hideLabel: true
-          placeholder: Address
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve updates
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: Submit 🚀
-      styles:
-        self:
-          textAlign: center
-    styles:
-      self:
-        height: auto
-        width: narrow
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-24
-          - pb-24
-          - pr-4
-          - pl-4
-        flexDirection: row
-        textAlign: left
 ---
