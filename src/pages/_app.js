@@ -1,6 +1,6 @@
 import { generateGlobalCssVariables } from '@/utils/theme-style-utils';
 import { useEffect, useState } from 'react';
-import Head from 'next/head';
+import Script from 'next/script';
 import '../css/main.css';
 
 export default function MyApp({ Component, pageProps }) {
@@ -28,9 +28,10 @@ export default function MyApp({ Component, pageProps }) {
 
     return (
         <>
-            <Head>
-                <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-            </Head>
+            <Script
+                src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+                strategy="afterInteractive"
+            />
             <style jsx global>{`
                 :root {
                     ${cssVars}
