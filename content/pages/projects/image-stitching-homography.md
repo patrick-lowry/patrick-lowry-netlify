@@ -8,11 +8,11 @@ description: >-
   Advanced computer vision project implementing image stitching algorithms using homography transformation, feature detection, and RANSAC for panoramic image creation.
 featuredImage:
   type: ImageBlock
-  url: /images/bg1.jpg
+  url: /images/homography.png
   altText: Image stitching visualization
 media:
   type: ImageBlock
-  url: /images/bg1.jpg
+  url: /images/homography.png
   altText: Homography transformation example
 ---
 
