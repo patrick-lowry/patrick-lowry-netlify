@@ -8,11 +8,11 @@ description: >-
   Implementation of probabilistic pixel classification using Bayesian inference for image segmentation and medical imaging applications with uncertainty quantification.
 featuredImage:
   type: ImageBlock
-  url: /images/bg3.jpg
+  url: /images/pixel-classification-bayes.png
   altText: Bayesian pixel classification results
 media:
   type: ImageBlock
-  url: /images/bg3.jpg
+  url: /images/pixel-classification-bayes.png
   altText: Probabilistic segmentation visualization
 ---
 
