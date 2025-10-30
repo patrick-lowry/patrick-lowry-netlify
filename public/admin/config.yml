@@ -1,0 +1,66 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/pages/index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Type", name: "type", widget: "hidden", default: "PageLayout"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Colors", name: "colors", widget: "string", default: "colors-a"}
+          - label: "Background Image"
+            name: "backgroundImage"
+            widget: "object"
+            fields:
+              - {label: "Type", name: "type", widget: "hidden", default: "BackgroundImage"}
+              - {label: "URL", name: "url", widget: "image"}
+              - {label: "Background Size", name: "backgroundSize", widget: "string", default: "cover"}
+              - {label: "Background Position", name: "backgroundPosition", widget: "string", default: "center"}
+              - {label: "Background Repeat", name: "backgroundRepeat", widget: "string", default: "no-repeat"}
+              - {label: "Opacity", name: "opacity", widget: "number", default: 75}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Hero Section"
+                name: "HeroSection"
+                widget: "object"
+                fields:
+                  - {label: "Type", name: "type", widget: "hidden", default: "HeroSection"}
+                  - {label: "Element ID", name: "elementId", widget: "string", required: false}
+                  - {label: "Colors", name: "colors", widget: "string", default: "colors-f"}
+                  - {label: "Background Size", name: "backgroundSize", widget: "string", default: "full"}
+                  - {label: "Title", name: "title", widget: "text"}
+                  - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/pages/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/pages/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
