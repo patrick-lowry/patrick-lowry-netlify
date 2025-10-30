@@ -8,12 +8,12 @@ description: >-
   Implementation of advanced kernel methods for non-linear classification problems using SVM, RBF, and custom kernel functions with performance optimization.
 featuredImage:
   type: ImageBlock
-  url: /images/bg3.jpg
-  altText: Project thumbnail image
+  url: /images/non-linear-classification.png
+  altText: Non-linear classification visualization
 media:
   type: ImageBlock
-  url: /images/bg3.jpg
-  altText: Project image
+  url: /images/non-linear-classification.png
+  altText: Kernel methods classification results
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
