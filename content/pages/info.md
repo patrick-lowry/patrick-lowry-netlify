@@ -228,7 +228,7 @@ sections:
     subtitle: 'Contact:'
     colors: colors-f
     text: |
-      [pllowry@hotmail.com](mailto:pllowry@hotmail.com)
+      Connect with me on [LinkedIn](https://www.linkedin.com/in/patrick-lowry/) for professional inquiries
   - type: DividerSection
     styles:
       self:
