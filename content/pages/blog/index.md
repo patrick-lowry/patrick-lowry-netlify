@@ -1,5 +1,5 @@
 ---
-type: PostFeedLayout
+type: PageLayout
 title: Blog
 colors: colors-a
 backgroundImage:
@@ -9,24 +9,7 @@ backgroundImage:
   backgroundPosition: center
   backgroundRepeat: no-repeat
   opacity: 75
-postFeed:
-  type: PostFeedSection
-  colors: colors-f
-  showDate: true
-  showAuthor: false
-  showExcerpt: true
-  showFeaturedImage: true
-  showReadMoreLink: true
-  variant: variant-d
-  styles:
-    self:
-      width: narrow
-      padding:
-        - pt-0
-        - pl-4
-        - pr-4
-        - pb-12
-topSections:
+sections:
   - type: HeroSection
     title: Blog
     subtitle: ''
@@ -45,4 +28,20 @@ topSections:
           - pr-4
         flexDirection: row
         textAlign: left
+  - type: TextSection
+    colors: colors-f
+    variant: variant-a
+    title: Coming Soon
+    text: |
+      Blog posts will be available here soon. Check back later for updates on machine learning, data science, and software development.
+    styles:
+      self:
+        height: auto
+        width: narrow
+        padding:
+          - pt-12
+          - pb-36
+          - pl-4
+          - pr-4
+        textAlign: center
 ---
