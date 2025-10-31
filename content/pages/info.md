@@ -28,10 +28,7 @@ sections:
 
       Proven track-record of scaling complex systems under pressure: NHS Covid platform (100k to 5M+ vaccines/week), Sainsburys-Argos Black Friday (1,000 orders per minute), currently investigating scaling and accelerating engineering through GenAI at Vodafone.
 
-    media:
-      type: ImageBlock
-      url: /images/about.jpg
-      altText: Hero image
+    media: null
     styles:
       self:
         height: auto
