@@ -13,10 +13,8 @@ sections:
   - elementId: ""
     colors: colors-f
     backgroundSize: full
-    title: Keep Learning, Keep Engineering.....
-    subtitle: I'm an IT executive with many years hands-on delivery and solution
-      architecture experience across multiple industries. But at heart I'm an
-      engineer.......
+    title: Keep Learning.....
+    subtitle:
     styles:
       self:
         height: auto
@@ -48,9 +46,9 @@ sections:
     showReadMoreLink: true
     variant: variant-b
     projects:
-      - content/pages/projects/project-one.md
-      - content/pages/projects/project-two.md
-      - content/pages/projects/project-three.md
+      - content/pages/projects/cycling-data-analytics.md
+      - content/pages/projects/language-embeddings-protein-analysis.md
+      - content/pages/projects/non-linear-classification-kernels.md
       - content/pages/projects/image-stitching-homography.md
       - content/pages/projects/hugging-face-agents.md
       - content/pages/projects/pixel-classification-bayes.md
