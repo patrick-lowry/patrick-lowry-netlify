@@ -14,7 +14,7 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: Welcome
-    subtitle:
+    subtitle: ""
     styles:
       self:
         height: auto
@@ -62,5 +62,5 @@ sections:
           - pl-4
           - pr-4
         textAlign: left
-    subtitle: Projects
+    subtitle: "Projects"
 ---
