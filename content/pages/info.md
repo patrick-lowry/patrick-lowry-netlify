@@ -14,7 +14,19 @@ sections:
     colors: colors-f
     backgroundSize: full
     text: >+
-      # Senior Technical Executive & Solution Architect
+      # Solution Architect, Engineer, Director, AI/ML Graduate
+
+
+      Technical Leader with 27 years' experience across digital native startups and large enterprises. 5+ years as a forward deployed solutions architect, 20+ years managing engineering and architecture teams (10 embedded with customer engineering teams). Experience spans startup cultures (dotcom era), large enterprises (Vodafone, M&S, JPMorgan) and regulated government bodies (NHS).
+
+
+      Recent MSc in Data Science and Machine Learning from University College London (2024) – dissertation on language model embeddings for protein sequence analysis.
+
+
+      Built full-stack cycling analytics platform (Next.js, Flask, Python, Docker, PostgreSQL) with LLM integration in progress.
+
+
+      Proven track-record of scaling complex systems under pressure: NHS Covid platform (100k to 5M+ vaccines/week), Sainsburys-Argos Black Friday (1,000 orders per minute), currently investigating scaling and accelerating engineering through GenAI at Vodafone.
 
     media:
       type: ImageBlock
@@ -105,7 +117,7 @@ sections:
         actions:
           - type: Link
             label: GitHub
-            url: 'https://github.com/'
+            url: 'https://github.com/patrick-lowry'
         styles:
           self:
             textAlign: left
@@ -177,29 +189,29 @@ sections:
     subtitle: 'Skills:'
     items:
       - type: Label
-        label: Python
-      - type: Label
-        label: Machine Learning
-      - type: Label
-        label: React/Next.js
-      - type: Label
-        label: FastAPI
-      - type: Label
-        label: PostgreSQL
-      - type: Label
-        label: AWS/Azure
-      - type: Label
-        label: Docker/Kubernetes
-      - type: Label
-        label: Data Science
-      - type: Label
-        label: Computer Vision
-      - type: Label
-        label: NLP/Transformers
-      - type: Label
         label: Solution Architecture
       - type: Label
+        label: AI/Machine Learning
+      - type: Label
+        label: Python/PyTorch/Numpy
+      - type: Label
+        label: AWS/Azure/Terraform
+      - type: Label
+        label: Java/Next.js/Flask
+      - type: Label
+        label: DevOps/Docker
+      - type: Label
+        label: PostgreSQL/Redis
+      - type: Label
         label: Technical Leadership
+      - type: Label
+        label: NLP/Bioinformatics
+      - type: Label
+        label: Cloud Engineering
+      - type: Label
+        label: Scalability/Performance
+      - type: Label
+        label: Stakeholder Engagement
   - type: DividerSection
     styles:
       self:
@@ -216,7 +228,7 @@ sections:
     subtitle: 'Contact:'
     colors: colors-f
     text: |
-      [thisismyemail.@myemail.me](mailto:thisismyemail.@myemail.me)
+      [pllowry@hotmail.com](mailto:pllowry@hotmail.com)
   - type: DividerSection
     styles:
       self:
@@ -234,42 +246,56 @@ sections:
       - type: FeaturedItem
         subtitle: 'Experience:'
         text: |-
-          **Current**
+          **2005 – Present**
 
-          * freelance @freelance.me
+          * Associate Director - Tier 1 IT Consultancy
+          * Various leadership roles in architecture, engineering, cloud strategy
 
-          **2018-2021**
+          **2022-2023, 2024-Present**
 
-          * fullstack at this startup
+          * Technology Delivery Lead - Vodafone UK
+          * Managing 30+ embedded engineering teams
 
-          **2015**
+          **2021-2022**
 
-          * senior front-end at this place
+          * Architecture Team Lead - NHS Covid Booster Programme
+          * Scaled platform to 5M+ vaccinations/week
 
-          **2013**
+          **2013-2016**
 
-          * intern developer at a big company
+          * Lead Channels Architect - Argos Transformation
+          * Scaled to 1,000 orders/minute during Black Friday
 
-          **2011**
+          **2000-2005**
 
-          * flipping burgers
+          * Forward Deployed Solutions Architect - ATG
+          * Embedded with startups and enterprise customers across EMEA
         styles:
           self:
             textAlign: left
       - type: FeaturedItem
         subtitle: 'Education:'
         text: |-
-          **2015-2018**
+          **2023-2024**
 
-          * ba computer sciense at a semi fancy school
+          * MSc Data Science and Machine Learning - University College London
+          * Dissertation: Language Model Embeddings for Protein Analysis
 
-          **2014**
+          **2020-2021**
 
-          * react certificate somewhere
+          * MITx Micro-master's in Data Science (2 modules)
 
-          **2011**
+          **2025**
 
-          * my highschool
+          * Agentic AI Course - Hugging Face
+
+          **2018**
+
+          * AWS Certified Solution Architect
+
+          **1993-1997**
+
+          * Bachelor of Engineering - Trinity College Dublin
         styles:
           self:
             textAlign: left
