@@ -13,7 +13,7 @@ sections:
   - elementId: ""
     colors: colors-f
     backgroundSize: full
-    title: Keep Learning.....
+    title: Welcome
     subtitle:
     styles:
       self:
@@ -25,8 +25,8 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-36
-          - pb-48
+          - pt-24
+          - pb-24
           - pl-4
           - pr-4
         flexDirection: row-reverse
