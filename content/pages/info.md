@@ -16,10 +16,6 @@ sections:
     text: >+
       # Senior Technical Executive & Solution Architect
 
-      I'm Patrick Lowry, Associate Director at Accenture with 25+ years of
-      experience bridging the gap between enterprise strategy and hands-on
-      technical delivery. I don't just architect solutions—I build them.
-
     media:
       type: ImageBlock
       url: /images/about.jpg
