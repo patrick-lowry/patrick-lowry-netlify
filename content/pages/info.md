@@ -108,9 +108,14 @@ sections:
         borderStyle: solid
   - type: FeaturedItemsSection
     subtitle: 'You can find me here:'
+    title: ""
     colors: colors-f
+    actions: []
     items:
       - type: FeaturedItem
+        title: ""
+        subtitle: ""
+        text: ""
         actions:
           - type: Link
             label: GitHub
@@ -119,6 +124,9 @@ sections:
           self:
             textAlign: left
       - type: FeaturedItem
+        title: ""
+        subtitle: ""
+        text: ""
         actions:
           - type: Link
             label: Twitter
@@ -127,6 +135,9 @@ sections:
           self:
             textAlign: left
       - type: FeaturedItem
+        title: ""
+        subtitle: ""
+        text: ""
         actions:
           - type: Link
             label: LinkedIn
@@ -135,6 +146,9 @@ sections:
           self:
             textAlign: left
       - type: FeaturedItem
+        title: ""
+        subtitle: ""
+        text: ""
         actions:
           - type: Link
             label: CodePen
@@ -143,6 +157,9 @@ sections:
           self:
             textAlign: left
       - type: FeaturedItem
+        title: ""
+        subtitle: ""
+        text: ""
         actions:
           - type: Link
             label: Discord
@@ -151,6 +168,9 @@ sections:
           self:
             textAlign: left
       - type: FeaturedItem
+        title: ""
+        subtitle: ""
+        text: ""
         actions:
           - type: Link
             label: Instagram
@@ -239,8 +259,12 @@ sections:
         borderStyle: solid
   - type: FeaturedItemsSection
     colors: colors-f
+    title: ""
+    subtitle: ""
+    actions: []
     items:
       - type: FeaturedItem
+        title: ""
         subtitle: 'Experience:'
         text: |-
           **2005 – Present**
@@ -271,6 +295,7 @@ sections:
           self:
             textAlign: left
       - type: FeaturedItem
+        title: ""
         subtitle: 'Education:'
         text: |-
           **2023-2024**
