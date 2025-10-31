@@ -4,7 +4,7 @@ title: About
 colors: colors-a
 sections:
   - type: HeroSection
-    title: About Patrick Lowry
+    title: About Me
     subtitle: ""
     actions: []
     colors: colors-f
