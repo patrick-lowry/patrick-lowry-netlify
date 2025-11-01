@@ -25,7 +25,7 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-24
+          - pt-12
           - pb-24
           - pl-4
           - pr-4
@@ -33,6 +33,13 @@ sections:
         textAlign: left
     type: HeroSection
     actions: []
+  - type: DividerSection
+    styles:
+      self:
+        width: wide
+        padding:
+          - pt-8
+          - pb-8
   - colors: colors-f
     type: FeaturedProjectsSection
     elementId: ''
