@@ -1,4 +1,5 @@
 ---
+type: SimpleProjectLayout
 title: Cycling Data Analytics (Projects Simple)
 titleImage: /images/cycling-analytics.png
 description: Full-stack cycling analytics platform with machine learning insights
