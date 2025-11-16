@@ -1,5 +1,5 @@
 ---
-title: Cycling Data Analytics (Simple)
+title: Cycling Data Analytics (Projects Simple)
 titleImage: /images/cycling-analytics.png
 description: Full-stack cycling analytics platform with machine learning insights
 subheader: A modern approach to cycling performance analysis

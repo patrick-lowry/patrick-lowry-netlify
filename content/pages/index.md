@@ -54,6 +54,7 @@ sections:
     variant: variant-b
     projects:
       - content/pages/projects/cycling-data-analytics.md
+      - content/pages/projects/pages-projects-cycling-simple.md
       - content/pages/projects/language-embeddings-protein-analysis.md
       - content/pages/projects/non-linear-classification-kernels.md
       - content/pages/projects/image-stitching-homography.md
