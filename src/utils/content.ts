@@ -9,6 +9,8 @@ import { PAGE_MODEL_NAMES, PageModelType } from '@/types/generated';
 
 const contentBaseDir = 'content';
 const pagesBaseDir = contentBaseDir + '/pages';
+const projectsBaseDir = contentBaseDir + '/projects';
+const postsBaseDir = contentBaseDir + '/posts';
 
 const allReferenceFields = {};
 allModels.forEach((model) => {
@@ -89,12 +91,19 @@ function resolveReferences(content: types.ContentObject, fileToContent: Record<s
 
 function contentUrl(obj: types.ContentObject) {
     const fileName = obj.__metadata.id;
-    if (!fileName.startsWith(pagesBaseDir)) {
-        console.warn('Content file', fileName, 'expected to be a page, but is not under', pagesBaseDir);
+
+    let url;
+    if (fileName.startsWith(pagesBaseDir)) {
+        url = fileName.slice(pagesBaseDir.length);
+    } else if (fileName.startsWith(projectsBaseDir)) {
+        url = '/projects' + fileName.slice(projectsBaseDir.length);
+    } else if (fileName.startsWith(postsBaseDir)) {
+        url = '/posts' + fileName.slice(postsBaseDir.length);
+    } else {
+        console.warn('Content file', fileName, 'is not under pages, projects, or posts directory');
         return;
     }
 
-    let url = fileName.slice(pagesBaseDir.length);
     url = url.split('.')[0];
     if (url.endsWith('/index')) {
         url = url.slice(0, -6) || '/';

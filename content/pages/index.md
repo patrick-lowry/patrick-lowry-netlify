@@ -53,13 +53,13 @@ sections:
     showReadMoreLink: true
     variant: variant-b
     projects:
-      - content/pages/projects/cycling-data-analytics.md
-      - content/pages/projects/pages-projects-cycling-simple.md
-      - content/pages/projects/language-embeddings-protein-analysis.md
-      - content/pages/projects/non-linear-classification-kernels.md
-      - content/pages/projects/image-stitching-homography.md
-      - content/pages/projects/hugging-face-agents.md
-      - content/pages/projects/pixel-classification-bayes.md
+      - content/projects/cycling-data-analytics.md
+      - content/projects/projects-cycling-simple.md
+      - content/projects/language-embeddings-protein-analysis.md
+      - content/projects/non-linear-classification-kernels.md
+      - content/projects/image-stitching-homography.md
+      - content/projects/hugging-face-agents.md
+      - content/projects/pixel-classification-bayes.md
     styles:
       self:
         height: auto
