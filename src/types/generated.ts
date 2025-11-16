@@ -1,10 +1,10 @@
 import { BaseContentObject } from './base';
 
 export type DataModelType = Config | Person | ThemeStyle;
-export type PageModelType = PageLayout | PostFeedLayout | PostLayout | ProjectFeedLayout | ProjectLayout;
+export type PageModelType = PageLayout | PostFeedLayout | PostLayout | ProjectFeedLayout | ProjectLayout | SimpleProjectLayout;
 
 export const DATA_MODEL_NAMES = ['Config', 'Person', 'ThemeStyle'];
-export const PAGE_MODEL_NAMES = ['PageLayout', 'PostFeedLayout', 'PostLayout', 'ProjectFeedLayout', 'ProjectLayout'];
+export const PAGE_MODEL_NAMES = ['PageLayout', 'PostFeedLayout', 'PostLayout', 'ProjectFeedLayout', 'ProjectLayout', 'SimpleProjectLayout'];
 
 export type SectionModels =
     | ContactSection
@@ -58,6 +58,7 @@ export type ContentObject =
     | RecentPostsSection
     | RecentProjectsSection
     | SelectFormControl
+    | SimpleProjectLayout
     | Social
     | Testimonial
     | TestimonialsSection
@@ -103,6 +104,7 @@ export type ContentObjectType =
     | 'RecentPostsSection'
     | 'RecentProjectsSection'
     | 'SelectFormControl'
+    | 'SimpleProjectLayout'
     | 'Social'
     | 'Testimonial'
     | 'TestimonialsSection'
@@ -553,6 +555,23 @@ export type ProjectLayout = BaseContentObject & {
     colors?: 'colors-a' | 'colors-b' | 'colors-c' | 'colors-d' | 'colors-e';
     backgroundImage?: BackgroundImage;
     markdownContent: string;
+};
+
+export type SimpleProjectLayout = BaseContentObject & {
+    type: 'SimpleProjectLayout';
+    title: string;
+    titleImage?: string;
+    description?: string;
+    subheader?: string;
+    date?: string;
+    metaTitle?: string;
+    metaDescription?: string;
+    addTitleSuffix?: boolean;
+    socialImage?: string;
+    metaTags?: MetaTag[];
+    colors?: 'colors-a' | 'colors-b' | 'colors-c' | 'colors-d' | 'colors-e';
+    backgroundImage?: BackgroundImage;
+    markdownContent?: string;
 };
 
 export type QuoteSection = BaseContentObject & {
