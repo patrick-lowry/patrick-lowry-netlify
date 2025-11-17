@@ -2,12 +2,20 @@
 type: SimpleProjectLayout
 title: Language Embeddings for Protein Analysis
 date: 2024-09-15T00:00:00.000Z
-subheader: Research Project
+subheader: >-
+  Research Project - Do protein embeddings cluster in a biologically meaningful
+  way?
 description: >-
-  Advanced NLP techniques applied to protein sequence analysis using transformer models and language embeddings for structure prediction and functional classification.
+  Investigates whether, by considering a protein's pfam elements as 'words' and
+  thus a protein as a 'sentence' of these words, by encoding these using
+  Word2Vec do the pfam words organise into clusters that have any valid
+  biological meaning?
 thumbnailImage: /images/protein-clusters.png
 shortDescription: >-
-  Advanced NLP techniques applied to protein sequence analysis using transformer models and language embeddings for structure prediction and functional classification.
+  Investigates whether, by considering a protein's pfam elements as 'words' and
+  thus a protein as a 'sentence' of these words, if the words are encoded using
+  Word2Vec, do the embeddings organise into clusters that have any biological
+  meaning?
 bannerImage: /images/protein-clusters.png
 ---
 

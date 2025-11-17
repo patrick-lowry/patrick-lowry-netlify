@@ -1,24 +1,27 @@
 ---
 type: SimpleProjectLayout
-title: Non Linear Classification with Kernels
+title: Non Linear Classification
 date: 2024-08-10T00:00:00.000Z
-subheader: Academic Research
+subheader: >-
+  Exploring various transformations in order to classify data that's not
+  linearly separable in its natural form.
 description: >-
-  Implementation of advanced kernel methods for non-linear classification problems using SVM, RBF, and custom kernel functions with performance optimization.
+  Implementation of advanced kernel methods for non-linear classification
+  problems using SVM, RBF, and custom kernel functions with performance
+  optimization.
 thumbnailImage: /images/non-linear-classification.png
 shortDescription: >-
-  Implementation of advanced kernel methods for non-linear classification problems using SVM, RBF, and custom kernel functions with performance optimization.
+  Investigates various methods for transforming data that's not linearly
+  separable, such that it can be classified. Includes SVM and the RBF kernel
 bannerImage: /images/non-linear-classification.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+Traditional classification techniques rely on finding a dividing plane that can separate data into various classifications. In the simplest case of 2 dimensional data, one can see visually if the data can be separated by plotting the points and drawing a line. Points on one side of the line are of type A and on the other side are of type B. But what happens if the data is not linearly separable? Take for example this set of datapoints arranged in a spiral form - its not possible to draw a straight line to separate these points.
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+One way of separating the data is to transform it by adding extra dimensions. So for example, if I have podints in 2D with coordinates x1, x2, we may add x3 which is some function of x1 and x2. The hope being that there is a 3D plane that can separate these modified points. Or perhaps we need 4 dimensions or 5 dimensions etc.
 
-> "Everybody should learn to program a computer, because it teaches you how to think."
+There are various transformations that can be applied. In this project we investigate:
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
-
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
-
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+* Simple Linear
+* Polynomial
+* RBF Kernel
