@@ -56,11 +56,15 @@ export default defineConfig({
         label: "Projects",
         path: "content/projects",
         fields: [
+          // Basic Information Section
           {
             type: "string",
             name: "type",
             label: "Layout Type",
             options: ["ProjectLayout", "SimpleProjectLayout"],
+            ui: {
+              component: "select",
+            }
           },
           {
             type: "string",
@@ -70,27 +74,14 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "image",
-            name: "thumbnailImage",
-            label: "Thumbnail Image (for project listings)",
-          },
-          {
-            type: "image",
-            name: "bannerImage",
-            label: "Banner Image (appears at top of page)",
-          },
-          {
             type: "datetime",
             name: "date",
             label: "Date",
           },
           {
             type: "string",
-            name: "shortDescription",
-            label: "Short Description (for project listings)",
-            ui: {
-              component: "textarea"
-            }
+            name: "subheader",
+            label: "Subheader",
           },
           {
             type: "string",
@@ -100,10 +91,28 @@ export default defineConfig({
               component: "textarea"
             }
           },
+          // Project List Page Section
+          {
+            type: "image",
+            name: "thumbnailImage",
+            label: "Thumbnail Image",
+            description: "Displayed in project listings",
+          },
           {
             type: "string",
-            name: "subheader",
-            label: "Subheader",
+            name: "shortDescription",
+            label: "Short Description",
+            description: "Displayed in project listings",
+            ui: {
+              component: "textarea"
+            }
+          },
+          // Project Page Section
+          {
+            type: "image",
+            name: "bannerImage",
+            label: "Banner Image",
+            description: "Displayed at top of project page",
           },
           {
             type: "rich-text",
