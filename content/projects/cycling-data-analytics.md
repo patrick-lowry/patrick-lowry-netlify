@@ -1,6 +1,6 @@
 ---
 type: SimpleProjectLayout
-title: Cycling Data Analytics (Projects Simple)
+title: Cycling Data Analytics
 date: 2024-10-01T00:00:00.000Z
 subheader: >-
   [Subheader] A full stack, serverless, AI-enabled platform to analyse cycling
