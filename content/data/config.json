@@ -20,6 +20,11 @@
             },
             {
                 "type": "Link",
+                "label": "Education",
+                "url": "/education"
+            },
+            {
+                "type": "Link",
                 "label": "Blog",
                 "url": "/blog"
             }
@@ -50,14 +55,26 @@
             },
             {
                 "type": "Link",
-                "label": "Contact",
-                "url": "mailto:thisismyemail.@myemail.me",
+                "label": "Projects",
+                "url": "/projects",
+                "altText": ""
+            },
+            {
+                "type": "Link",
+                "label": "Education",
+                "url": "/education",
                 "altText": ""
             },
             {
                 "type": "Link",
                 "label": "Blog",
                 "url": "/blog",
+                "altText": ""
+            },
+            {
+                "type": "Link",
+                "label": "Contact",
+                "url": "mailto:thisismyemail.@myemail.me",
                 "altText": ""
             },
             {
