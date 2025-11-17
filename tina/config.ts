@@ -58,10 +58,26 @@ export default defineConfig({
         fields: [
           {
             type: "string",
+            name: "type",
+            label: "Layout Type",
+            options: ["ProjectLayout", "SimpleProjectLayout"],
+          },
+          {
+            type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
             required: true,
+          },
+          {
+            type: "image",
+            name: "thumbnailImage",
+            label: "Thumbnail Image (for project listings)",
+          },
+          {
+            type: "image",
+            name: "bannerImage",
+            label: "Banner Image (appears at top of page)",
           },
           {
             type: "datetime",
@@ -70,11 +86,24 @@ export default defineConfig({
           },
           {
             type: "string",
+            name: "shortDescription",
+            label: "Short Description (for project listings)",
+            ui: {
+              component: "textarea"
+            }
+          },
+          {
+            type: "string",
             name: "description",
             label: "Description",
             ui: {
               component: "textarea"
             }
+          },
+          {
+            type: "string",
+            name: "subheader",
+            label: "Subheader",
           },
           {
             type: "rich-text",

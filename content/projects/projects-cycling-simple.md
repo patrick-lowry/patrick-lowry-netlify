@@ -1,7 +1,9 @@
 ---
 type: SimpleProjectLayout
 title: Cycling Data Analytics (Projects Simple)
-titleImage: /images/cycling-analytics.png
+thumbnailImage: /images/cycling-analytics.png
+bannerImage: /images/cycling-analytics.png
+shortDescription: Full-stack cycling analytics platform with machine learning insights
 description: Full-stack cycling analytics platform with machine learning insights
 subheader: A modern approach to cycling performance analysis
 date: 2024-10-01T00:00:00.000Z

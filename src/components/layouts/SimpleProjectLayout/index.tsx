@@ -10,7 +10,9 @@ import BaseLayout from '../BaseLayout';
 type SimpleProjectLayout = {
     type: 'SimpleProjectLayout';
     title: string;
-    titleImage?: string;
+    bannerImage?: string;
+    thumbnailImage?: string;
+    shortDescription?: string;
     description?: string;
     subheader?: string;
     date?: string;
@@ -22,7 +24,7 @@ type ComponentProps = PageComponentProps & SimpleProjectLayout;
 const Component: React.FC<ComponentProps> = (props) => {
     const {
         title,
-        titleImage,
+        bannerImage,
         description,
         subheader,
         date,
@@ -50,9 +52,9 @@ const Component: React.FC<ComponentProps> = (props) => {
                 {description && (
                     <div className="max-w-3xl mx-auto mb-10 text-lg sm:text-xl sm:mb-14">{description}</div>
                 )}
-                {titleImage && (
+                {bannerImage && (
                     <figure className="max-w-5xl mx-auto mb-10 sm:mb-14">
-                        <img src={titleImage} alt={title} className="w-full" />
+                        <img src={bannerImage} alt={title} className="w-full" />
                     </figure>
                 )}
                 {markdownContent && (
