@@ -136,7 +136,18 @@ function getAllProjectsSorted(objects: ContentObject[]) {
     const all = objects.filter((object) =>
         object.__metadata?.modelName === 'ProjectLayout' || object.__metadata?.modelName === 'SimpleProjectLayout'
     ) as ProjectLayout[];
-    const sorted = all.sort(
+
+    // Apply SimpleProjectLayout resolver to convert image strings to ImageBlock objects
+    // This ensures thumbnailImage and bannerImage work correctly in project listings
+    const enriched = all.map((project) => {
+        if (project.__metadata?.modelName === 'SimpleProjectLayout') {
+            const simpleResolver = PropsResolvers.SimpleProjectLayout;
+            return simpleResolver ? simpleResolver(project, objects) as ProjectLayout : project;
+        }
+        return project;
+    });
+
+    const sorted = enriched.sort(
         (projectA, projectB) => new Date(projectB.date).getTime() - new Date(projectA.date).getTime()
     );
     return sorted;
