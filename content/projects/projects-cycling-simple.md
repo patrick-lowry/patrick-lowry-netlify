@@ -3,10 +3,12 @@ type: SimpleProjectLayout
 title: Cycling Data Analytics (Projects Simple)
 thumbnailImage: /images/cycling-analytics.png
 bannerImage: /images/cycling-analytics.png
-shortDescription: Full-stack cycling analytics platform with machine learning insights
+date: 2024-10-01T00:00:00.000Z
+shortDescription: >-
+  Full-stack cycling data analytics platform built on Next.js, Flask, Postgres
+  deployed as AWS lambdas using Zappa to wrap the flask app 
 description: Full-stack cycling analytics platform with machine learning insights
 subheader: A modern approach to cycling performance analysis
-date: 2024-10-01T00:00:00.000Z
 ---
 
 This is a full-stack cycling analytics platform that integrates with Strava API to provide comprehensive performance insights.

@@ -69,6 +69,44 @@ const PropsResolvers: Partial<Record<ContentObjectType, ResolverFunction>> = {
             nextProject
         };
     },
+    // SimpleProjectLayout: Convert image URL strings to ImageBlock objects
+    // The markdown files store thumbnailImage and bannerImage as simple strings (e.g., "/images/photo.png")
+    // but the ImageBlock component expects an object with url, altText, etc.
+    // This resolver transforms the strings into proper ImageBlock objects to avoid null/undefined issues
+    SimpleProjectLayout: (props) => {
+        const result: any = { ...props };
+        const title = (props as any).title || 'Project';
+
+        // Convert thumbnailImage string to ImageBlock object (used in project listing pages)
+        if ((props as any).thumbnailImage && typeof (props as any).thumbnailImage === 'string') {
+            result.thumbnailImage = {
+                __metadata: {
+                    id: `${props.__metadata.id}-thumbnail`,
+                    modelName: 'ImageBlock',
+                    modelLabel: 'Image Block'
+                },
+                type: 'ImageBlock',
+                url: (props as any).thumbnailImage,
+                altText: title  // Use project title as alt text (never empty/null)
+            };
+        }
+
+        // Convert bannerImage string to ImageBlock object (used at top of project page)
+        if ((props as any).bannerImage && typeof (props as any).bannerImage === 'string') {
+            result.bannerImage = {
+                __metadata: {
+                    id: `${props.__metadata.id}-banner`,
+                    modelName: 'ImageBlock',
+                    modelLabel: 'Image Block'
+                },
+                type: 'ImageBlock',
+                url: (props as any).bannerImage,
+                altText: title  // Use project title as alt text (never empty/null)
+            };
+        }
+
+        return result;
+    },
     ProjectFeedLayout: (props, allData) => {
         const allProjects = getAllProjectsSorted(allData);
         return {
