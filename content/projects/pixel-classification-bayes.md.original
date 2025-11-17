@@ -1,14 +1,19 @@
 ---
-type: SimpleProjectLayout
+type: ProjectLayout
 title: Pixel Classification using Bayes Theorem
-date: 2024-05-30T00:00:00.000Z
-subheader: Machine Learning Research
+colors: colors-a
+date: '2024-05-30'
+client: Machine Learning Research
 description: >-
   Implementation of probabilistic pixel classification using Bayesian inference for image segmentation and medical imaging applications with uncertainty quantification.
-thumbnailImage: /images/pixel-classification-bayes.png
-shortDescription: >-
-  Implementation of probabilistic pixel classification using Bayesian inference for image segmentation and medical imaging applications with uncertainty quantification.
-bannerImage: /images/pixel-classification-bayes.png
+featuredImage:
+  type: ImageBlock
+  url: /images/pixel-classification-bayes.png
+  altText: Bayesian pixel classification results
+media:
+  type: ImageBlock
+  url: /images/pixel-classification-bayes.png
+  altText: Probabilistic segmentation visualization
 ---
 
 ## Overview

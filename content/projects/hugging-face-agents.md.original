@@ -1,14 +1,19 @@
 ---
-type: SimpleProjectLayout
+type: ProjectLayout
 title: Hugging Face Agents
-date: 2024-06-15T00:00:00.000Z
-subheader: AI Research Project
+colors: colors-a
+date: '2024-06-15'
+client: AI Research Project
 description: >-
   Development of intelligent AI agents using Hugging Face Transformers, implementing multi-modal capabilities and custom fine-tuning for specific enterprise use cases.
-thumbnailImage: /images/bg2.jpg
-shortDescription: >-
-  Development of intelligent AI agents using Hugging Face Transformers, implementing multi-modal capabilities and custom fine-tuning for specific enterprise use cases.
-bannerImage: /images/bg2.jpg
+featuredImage:
+  type: ImageBlock
+  url: /images/bg2.jpg
+  altText: AI agents architecture diagram
+media:
+  type: ImageBlock
+  url: /images/bg2.jpg
+  altText: Hugging Face Transformers implementation
 ---
 
 ## Overview
