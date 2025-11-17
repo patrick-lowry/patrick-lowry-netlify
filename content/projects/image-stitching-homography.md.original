@@ -1,14 +1,19 @@
 ---
-type: SimpleProjectLayout
+type: ProjectLayout
 title: Stitching Images using Homography
-date: 2024-07-20T00:00:00.000Z
-subheader: Computer Vision Project
+colors: colors-a
+date: '2024-07-20'
+client: Computer Vision Project
 description: >-
   Advanced computer vision project implementing image stitching algorithms using homography transformation, feature detection, and RANSAC for panoramic image creation.
-thumbnailImage: /images/homography.png
-shortDescription: >-
-  Advanced computer vision project implementing image stitching algorithms using homography transformation, feature detection, and RANSAC for panoramic image creation.
-bannerImage: /images/homography.png
+featuredImage:
+  type: ImageBlock
+  url: /images/homography.png
+  altText: Image stitching visualization
+media:
+  type: ImageBlock
+  url: /images/homography.png
+  altText: Homography transformation example
 ---
 
 ## Overview
