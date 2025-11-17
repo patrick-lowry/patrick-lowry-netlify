@@ -108,10 +108,12 @@ const PropsResolvers: Partial<Record<ContentObjectType, ResolverFunction>> = {
         return result;
     },
     ProjectFeedLayout: (props, allData) => {
-        const allProjects = getAllProjectsSorted(allData);
+        // Check if this is an education page or projects page based on URL path
+        const isEducation = props.__metadata?.urlPath?.startsWith('/education');
+        const items = isEducation ? getAllEducationSorted(allData) : getAllProjectsSorted(allData);
         return {
             ...(props as ProjectFeedLayout),
-            items: allProjects
+            items
         };
     },
     RecentProjectsSection: (props, allData) => {
@@ -133,9 +135,14 @@ function getAllPostsSorted(objects: ContentObject[]) {
 }
 
 function getAllProjectsSorted(objects: ContentObject[]) {
-    const all = objects.filter((object) =>
-        object.__metadata?.modelName === 'ProjectLayout' || object.__metadata?.modelName === 'SimpleProjectLayout'
-    ) as ProjectLayout[];
+    // Filter based on the URL path to separate projects from education
+    // Projects are in /projects/, education articles are in /education/
+    const all = objects.filter((object) => {
+        const isCorrectType = object.__metadata?.modelName === 'ProjectLayout' ||
+                            object.__metadata?.modelName === 'SimpleProjectLayout';
+        const isProjectPath = object.__metadata?.urlPath?.startsWith('/projects/');
+        return isCorrectType && isProjectPath;
+    }) as ProjectLayout[];
 
     // Apply SimpleProjectLayout resolver to convert image strings to ImageBlock objects
     // This ensures thumbnailImage and bannerImage work correctly in project listings
@@ -149,6 +156,26 @@ function getAllProjectsSorted(objects: ContentObject[]) {
 
     const sorted = enriched.sort(
         (projectA, projectB) => new Date(projectB.date).getTime() - new Date(projectA.date).getTime()
+    );
+    return sorted;
+}
+
+function getAllEducationSorted(objects: ContentObject[]) {
+    // Filter for education articles (in /education/ path, using SimpleProjectLayout)
+    const all = objects.filter((object) => {
+        const isCorrectType = object.__metadata?.modelName === 'SimpleProjectLayout';
+        const isEducationPath = object.__metadata?.urlPath?.startsWith('/education/');
+        return isCorrectType && isEducationPath;
+    }) as ProjectLayout[];
+
+    // Apply SimpleProjectLayout resolver to convert image strings to ImageBlock objects
+    const enriched = all.map((article) => {
+        const simpleResolver = PropsResolvers.SimpleProjectLayout;
+        return simpleResolver ? simpleResolver(article, objects) as ProjectLayout : article;
+    });
+
+    const sorted = enriched.sort(
+        (articleA, articleB) => new Date(articleB.date).getTime() - new Date(articleA.date).getTime()
     );
     return sorted;
 }

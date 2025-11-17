@@ -1,19 +1,19 @@
 ---
-type: PostFeedLayout
-title: Blog
+type: ProjectFeedLayout
+title: Education
 colors: colors-a
 backgroundImage:
   type: BackgroundImage
-  url: /images/bg2.jpg
+  url: /images/bg1.jpg
   backgroundSize: cover
   backgroundPosition: center
   backgroundRepeat: no-repeat
   opacity: 50
-postFeed:
-  type: PostFeedSection
+projectFeed:
+  type: ProjectFeedSection
   colors: colors-f
-  showDate: true
-  showExcerpt: true
+  showDate: false
+  showDescription: true
   showReadMoreLink: true
   showFeaturedImage: true
   variant: variant-a
@@ -27,8 +27,8 @@ postFeed:
         - pb-12
 topSections:
   - type: HeroSection
-    title: Blog
-    subtitle: Stories from my MSc journey and beyond
+    title: Education
+    subtitle: Learn machine learning fundamentals
     actions: []
     colors: colors-f
     backgroundSize: full
