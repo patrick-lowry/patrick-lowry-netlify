@@ -11,6 +11,7 @@ const contentBaseDir = 'content';
 const pagesBaseDir = contentBaseDir + '/pages';
 const projectsBaseDir = contentBaseDir + '/projects';
 const postsBaseDir = contentBaseDir + '/posts';
+const educationBaseDir = contentBaseDir + '/education';
 
 const allReferenceFields = {};
 allModels.forEach((model) => {
@@ -99,8 +100,10 @@ function contentUrl(obj: types.ContentObject) {
         url = '/projects' + fileName.slice(projectsBaseDir.length);
     } else if (fileName.startsWith(postsBaseDir)) {
         url = '/posts' + fileName.slice(postsBaseDir.length);
+    } else if (fileName.startsWith(educationBaseDir)) {
+        url = '/education' + fileName.slice(educationBaseDir.length);
     } else {
-        console.warn('Content file', fileName, 'is not under pages, projects, or posts directory');
+        console.warn('Content file', fileName, 'is not under pages, projects, posts, or education directory');
         return;
     }
 
