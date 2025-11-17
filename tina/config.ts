@@ -35,19 +35,126 @@ export default defineConfig({
         fields: [
           {
             type: "string",
+            name: "type",
+            label: "Layout Type",
+            options: ["PostLayout", "SimplePostLayout"],
+            ui: {
+              component: "select",
+            }
+          },
+          {
+            type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
             required: true,
           },
           {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+          },
+          {
             type: "string",
-            name: "body",
-            label: "Content",
-            isBody: true,
+            name: "series",
+            label: "Blog Series",
+            description: "Optional: Group this post into a series",
+            options: ["My MSc Experience", "Job Hunt", "Other"],
+            ui: {
+              component: "select",
+            }
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt",
+            description: "Short summary for blog listings",
             ui: {
               component: "textarea"
             }
+          },
+          {
+            type: "image",
+            name: "thumbnailImage",
+            label: "Thumbnail Image",
+            description: "Displayed in blog listings",
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Content",
+            isBody: true,
+          },
+        ],
+      },
+      {
+        name: "education",
+        label: "Education Articles",
+        path: "content/education",
+        fields: [
+          // Basic Information Section
+          {
+            type: "string",
+            name: "type",
+            label: "Layout Type",
+            options: ["SimpleProjectLayout"],
+            ui: {
+              component: "select",
+            }
+          },
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+          },
+          {
+            type: "string",
+            name: "subheader",
+            label: "Subheader",
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            ui: {
+              component: "textarea"
+            }
+          },
+          // Education List Page Section
+          {
+            type: "image",
+            name: "thumbnailImage",
+            label: "Thumbnail Image",
+            description: "Displayed in education listings",
+          },
+          {
+            type: "string",
+            name: "shortDescription",
+            label: "Short Description",
+            description: "Displayed in education listings",
+            ui: {
+              component: "textarea"
+            }
+          },
+          // Education Page Section
+          {
+            type: "image",
+            name: "bannerImage",
+            label: "Banner Image",
+            description: "Displayed at top of education page",
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Content",
+            isBody: true,
           },
         ],
       },
