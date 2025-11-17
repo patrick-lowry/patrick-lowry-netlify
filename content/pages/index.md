@@ -70,4 +70,70 @@ sections:
           - pr-4
         textAlign: left
     subtitle: "Projects"
+  - type: DividerSection
+    styles:
+      self:
+        width: wide
+        padding:
+          - pt-8
+          - pb-8
+  - colors: colors-f
+    type: FeaturedProjectsSection
+    elementId: ''
+    actions:
+      - type: Link
+        label: See all education articles
+        url: /education
+    showDate: false
+    showDescription: true
+    showFeaturedImage: true
+    showReadMoreLink: true
+    variant: variant-b
+    projects:
+      - content/education/machine-learning-101.md
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+        textAlign: left
+    subtitle: "Education"
+  - type: DividerSection
+    styles:
+      self:
+        width: wide
+        padding:
+          - pt-8
+          - pb-8
+  - colors: colors-f
+    type: FeaturedPostsSection
+    elementId: ''
+    actions:
+      - type: Link
+        label: See all blog posts
+        url: /blog
+    showDate: true
+    showExcerpt: true
+    showFeaturedImage: true
+    showReadMoreLink: true
+    variant: variant-b
+    posts:
+      - content/posts/first-day-at-school.md
+      - content/posts/why-does-everyone-have-a-maths-degree.md
+      - content/posts/oh-my-god-at-least-i-speak-the-language.md
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+        textAlign: left
+    subtitle: "Blog - My MSc Experience"
 ---
