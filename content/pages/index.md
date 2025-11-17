@@ -53,7 +53,6 @@ sections:
     showReadMoreLink: true
     variant: variant-b
     projects:
-      - content/projects/cycling-data-analytics.md
       - content/projects/projects-cycling-simple.md
       - content/projects/language-embeddings-protein-analysis.md
       - content/projects/non-linear-classification-kernels.md
