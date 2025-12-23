@@ -90,7 +90,8 @@ sections:
     showReadMoreLink: true
     variant: variant-b
     projects:
-      - content/education/machine-learning-101.md
+      - content/education/machine-learning-fundamentals-1.md
+      - content/education/machine-learning-fundamentals-2.md
     styles:
       self:
         height: auto
