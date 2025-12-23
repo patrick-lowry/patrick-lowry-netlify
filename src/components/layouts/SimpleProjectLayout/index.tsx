@@ -44,15 +44,12 @@ const Component: React.FC<ComponentProps> = (props) => {
                                 {formattedDate}
                             </time>
                         )}
-                        <h1 className="text-5xl sm:text-6xl">{title}</h1>
+                        <h1 className="text-4xl sm:text-5xl">{title}</h1>
                         {subheader && (
-                            <div className="text-2xl sm:text-3xl text-gray-600">{subheader}</div>
+                            <div className="text-xl sm:text-2xl text-gray-600">{subheader}</div>
                         )}
                     </div>
                 </header>
-                {description && (
-                    <div className="max-w-3xl mx-auto mb-10 text-lg sm:text-xl sm:mb-14">{description}</div>
-                )}
                 {/* Use ImageBlock component for consistency with project listings */}
                 {bannerImage && (
                     <figure className="max-w-5xl mx-auto mb-10 sm:mb-14">
@@ -62,7 +59,7 @@ const Component: React.FC<ComponentProps> = (props) => {
                 {markdownContent && (
                     <Markdown
                         options={{ forceBlock: true, overrides: { pre: HighlightedPreBlock } }}
-                        className="max-w-3xl mx-auto prose sm:prose-lg"
+                        className="max-w-4xl mx-auto prose prose-sm sm:prose-base"
                     >
                         {markdownContent}
                     </Markdown>
