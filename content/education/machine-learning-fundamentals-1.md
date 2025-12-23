@@ -7,7 +7,8 @@ description: >-
   A high-level introduction to machine learning concepts - part 1
 thumbnailImage: /images/bg1.jpg
 shortDescription: >-
-bannerImage:
+  Introduction to supervised, unsupervised, and reinforcement learning.
+bannerImage: /images/bg1.jpg
 ---
 
 # Introduction
