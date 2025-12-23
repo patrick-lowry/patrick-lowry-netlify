@@ -7,7 +7,8 @@ description: >-
   A high-level introduction to machine learning concepts.
 thumbnailImage: /images/bg1.jpg
 shortDescription: >-
-bannerImage:
+  Understanding how machine learning models encode data as vectors and numbers.
+bannerImage: /images/bg1.jpg
 ---
 
 ## Encoding and Vectors
@@ -16,7 +17,7 @@ Let's continue with some of the concepts discussed previously.
 
 Under the covers, all computers work by processing numbers - they don't work directly with words or images. When you write a document on your PC or Mac, each letter is stored as a unique number using a standard encoding scheme (such as ASCII or Unicode -  in ASCII, the letter 'a' has the number 97). Similarly an image actually consists of 1000's of pixels - each pixel has an x, y coordinate (its position in the image) and 3 numerical values specifying how much Red, Green and Blue colour is within it. Essentially, whatever data you need to train a model on, must first be converted to some numerical representation - this process of converting data to numbers is called 'encoding'.
 
-Does this mean that I can take a word and encode it by using the standard ASCII encoding of each letter in the word? Well, not quite. Taking language as an example, in order to model the enormous complexity of language and the relationships between words and the context within which they are used - many different numbers are needed. In fact, it is typical for a Langauge Model to represent (encode) each word as 300 different numbers! This list of numbers is referred to as a vector.
+Does this mean that I can take a word and encode it by using the standard ASCII encoding of each letter in the word? Well, not quite. Taking language as an example, in order to model the enormous complexity of language and the relationships between words and the context within which they are used - many different numbers are needed. In fact, it is typical for a Language Model to represent (encode) each word as 300 different numbers! This list of numbers is referred to as a vector.
 
 The word 'vector' sounds very technical - but all it is is a set of numbers to represent something. Your location in the world is a good example of a vector - to a person you meet, you might say that you live in 'London' but if you were a navigator you might instead refer to the longitude and latitude coordinates of London. Longitude and Latitude are just 2 numbers to represent a location - an example of a '2-dimensional vector' representing a location.
 
