@@ -5,17 +5,35 @@ date: 2024-01-15T00:00:00.000Z
 subheader: Data encoding and vectors
 description: >-
   A high-level introduction to machine learning concepts.
-thumbnailImage: /images/bg1.jpg
+thumbnailImage:
 shortDescription: >-
-  Understanding how machine learning models encode data as vectors and numbers.
+  How data is represented in order to train a model.
 bannerImage:
 ---
 
+<!--
 ## Encoding Data
 
-Under the covers, all computers work by processing numbers - they don't work directly with words or images. When you write a document on your PC or Mac, each letter is stored as a unique number using a standard encoding scheme (such as ASCII or Unicode -  in ASCII, the letter 'a' has the number 97). Similarly an image actually consists of 1000's of pixels - each pixel has an x, y coordinate (its position in the image) and 3 numerical values specifying how much Red, Green and Blue colour is within it. Essentially, whatever data you need to train a model on, must first be converted to some numerical representation - this process of converting data to numbers is called 'encoding'.
+Computers work by processing numbers - they don't work directly with words or images. In fact, when you write a document on your PC or Mac, each letter is stored as a unique number (there's a standard encoding scheme for characters called ASCII. In ASCII, the letter 'a' has the number 97). This process of representing data as numbers is called 'encoding'.
+
+
+
+Similarly an image actually consists of 1000's of pixels - each pixel has an x, y coordinate (its position in the image) and 3 numerical values specifying how much Red, Green and Blue colour is within it. Essentially, whatever data you need to train a model on, must first be converted to some numerical representation - this process of converting data to numbers is called 'encoding'.
 
 Does this mean that I can take a word and encode it by using the standard ASCII encoding of each letter in the word? Well, not quite. Taking language as an example, in order to model the enormous complexity of language and the relationships between words and the context within which they are used - many different numbers are needed. In fact, it is typical for a Language Model to represent (encode) each word as 300 different numbers!
+-->
+
+## Samples and Features
+Machine Learning models work on data, whether that be in training or inference. By 'data' we mean the thing we are interested in. For example, if we're trying to build a model that predicts whether or not someone will develop heart disease, the data we would use in our model would about a person. Going forward, it's a bit clearer to use the word 'sample' to refer to the data we use in training. In the example above, a single person would be one 'sample'. Of course, a person has many attributes - name, age, date of birth, sex, blood pressure etc. etc. These are called 'features'.
+
+To be effective, a model needs to be trained on 1,000s of samples and each sample must have multiple features. NOt only that, models work be performing some simple mathematical operations on data (more on that later) so each feature must first be represented as a number.
+
+The process of converting samples and features to sets of numbers is called 'encoding'.
+
+## Encoding
+Encodign simply refers to representing data as numbers. To take the example of a person, some features such as height and weight are already numbers. BUt what about 'Sex' or 'Ethnicity' - these are bits of text.
+
+In fact its pretty easy, to represent the feature 'Sex' you might use number 0 for a male and 1 for a female. Instead of 'P'Ethnicity' being 'English' or 'Irish' you might again just use different numbers for different countries. It doesn;t really matter which numbers you use as long as you use it consistently. 
 
 ## Vectors
 The word 'vector' sounds very technical - but all it is is a set of numbers that represent something. Your location in the world is a good example of a vector - to a person you meet, you might say that you live in 'London' but if you were a navigator you might instead refer to the longitude and latitude coordinates of London. Longitude and Latitude simply provide an alternative way to represent a location as 2 numbers. This can be thought of as a 2-dimensional vector - the first dimension is longitude, the second is latitude.

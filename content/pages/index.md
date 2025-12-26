@@ -26,13 +26,46 @@ sections:
           - mr-0
         padding:
           - pt-12
-          - pb-24
+          - pb-6
           - pl-4
           - pr-4
         flexDirection: row-reverse
         textAlign: left
     type: HeroSection
     actions: []
+  - type: DividerSection
+    styles:
+      self:
+        width: wide
+        padding:
+          - pt-8
+          - pb-8
+  - colors: colors-f
+    type: FeaturedProjectsSection
+    elementId: ''
+    actions:
+      - type: Link
+        label: See all education articles
+        url: /education
+    showDate: false
+    showDescription: true
+    showFeaturedImage: true
+    showReadMoreLink: true
+    variant: variant-b
+    projects:
+      - content/education/machine-learning-fundamentals-1.md
+      - content/education/machine-learning-fundamentals-2.md
+    styles:
+      self:
+        height: auto
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+        textAlign: left
+    subtitle: "Education"
   - type: DividerSection
     styles:
       self:
@@ -70,39 +103,6 @@ sections:
           - pr-4
         textAlign: left
     subtitle: "Projects"
-  - type: DividerSection
-    styles:
-      self:
-        width: wide
-        padding:
-          - pt-8
-          - pb-8
-  - colors: colors-f
-    type: FeaturedProjectsSection
-    elementId: ''
-    actions:
-      - type: Link
-        label: See all education articles
-        url: /education
-    showDate: false
-    showDescription: true
-    showFeaturedImage: true
-    showReadMoreLink: true
-    variant: variant-b
-    projects:
-      - content/education/machine-learning-fundamentals-1.md
-      - content/education/machine-learning-fundamentals-2.md
-    styles:
-      self:
-        height: auto
-        width: wide
-        padding:
-          - pt-24
-          - pb-24
-          - pl-4
-          - pr-4
-        textAlign: left
-    subtitle: "Education"
   - type: DividerSection
     styles:
       self:

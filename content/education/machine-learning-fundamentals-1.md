@@ -5,9 +5,9 @@ date: 2024-01-15T00:00:00.000Z
 subheader: A high level overview
 description: >-
   A high-level introduction to machine learning concepts - part 1
-thumbnailImage: /images/bg1.jpg
+thumbnailImage:
 shortDescription: >-
-  Introduction to supervised, unsupervised, and reinforcement learning.
+  A 10,000 ft introduction to Machine Learning.
 bannerImage:
 ---
 

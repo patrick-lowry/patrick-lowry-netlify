@@ -13,11 +13,11 @@ export default function ProjectFeedSection(props) {
     return (
         <Section elementId={elementId} colors={colors} styles={styles.self}>
             {title && (
-                <h2 className={classNames('text-4xl sm:text-5xl', mapStyles({ textAlign: sectionAlign }))}>{title}</h2>
+                <h2 className={classNames('text-2xl sm:text-3xl', mapStyles({ textAlign: sectionAlign }))}>{title}</h2>
             )}
             {subtitle && (
                 <p
-                    className={classNames('text-lg sm:text-xl', mapStyles({ textAlign: sectionAlign }), {
+                    className={classNames('text-2xl sm:text-3xl', mapStyles({ textAlign: sectionAlign }), {
                         'mt-6': title
                     })}
                 >
@@ -93,8 +93,8 @@ function ProjectGrid(props) {
                                 <ProjectDate date={project.date} />
                             </div>
                         )}
-                        <TitleTag className="text-3xl sm:text-4xl">{project.title}</TitleTag>
-                        {showDescription && displayDescription && <p className="mt-5 text-lg">{displayDescription}</p>}
+                        <TitleTag className="text-xl sm:text-2xl">{project.title}</TitleTag>
+                        {showDescription && displayDescription && <p className="mt-5 text-base">{displayDescription}</p>}
                         {showReadMoreLink && (
                             <div className="mt-8">
                                 <span className="inline-flex text-xl transition rounded-full p-4 border-2 border-current group-hover:bottom-shadow-6 group-hover:-translate-y-1.5">
@@ -151,9 +151,9 @@ function ProjectList(props) {
                                         <ProjectDate date={project.date} />
                                     </div>
                                 )}
-                                <TitleTag className="text-3xl sm:text-4xl">{project.title}</TitleTag>
+                                <TitleTag className="text-xl sm:text-2xl">{project.title}</TitleTag>
                                 {showDescription && displayDescription && (
-                                    <p className="mt-5 text-lg">{displayDescription}</p>
+                                    <p className="mt-5 text-base">{displayDescription}</p>
                                 )}
                             </div>
                             {showReadMoreLink && (
