@@ -8,43 +8,43 @@ excerpt: >-
 thumbnailImage: /images/bg2.jpg
 ---
 
-## The Big Day
+## Zero Day
 
-So there I was, standing outside the building on my first day of the MSc program, wondering if it was too late to claim I'd gotten the wrong address.
+<!--
+So there I was - 2 weeks before the start of my MSc and attending a "Foundation Course" in Statistics at University College London. "This is perfect", I said to myself. I'd been revising probability for the previous 3 weeks and, looking at the 'foundation' course topics, I thought this'd provide the perfect opportunity to ease me in gently. Afterall,  the last time I'd studied properly was 1997 when I proudly graduated with my Bachelors in Engineering (I love telling people I did Engineering - its a proper, traditional degree with loads of maths and problem-solving)!
 
-Everyone else seemed to know exactly what they were doing. They were chatting casually about "gradient descent" and "eigenvalues" like normal people discuss the weather. Meanwhile, I was still trying to remember if Python was the programming language or the snake.
+Determined to go full-student, I cycled in from home and had even prepared sandwiches - a truly unheard of event in the previous 21 years. Since moving to London in 2003, God knows how much money I'd given to 'Pret', but I was determined NOT to spend £3 on a Flat White or £4 on a 'Posh Cheddar and Pickle". Nope - I'd brought in my own coffee flask and sadwiches and had even made little cereal bars to stop me nibbling on mars bars.
 
-## The Welcome Session
+Anyway, the first lecture was in one of the newer buildings within a modern lecture theatre. Things hadn't changed that much in 23 years - although I was glad to see there were no overhead projectors in the room! There was a lectern at the bottom of the room and a wall of whiteboards behind the lectern. There were about 25 rows of seats form front to back, each row slightly higher than the row before it, with two breaks running from front to back - just like in a cinema
 
-The welcome talk was... illuminating. And by illuminating, I mean absolutely terrifying. The programme director cheerfully listed all the topics we'd be covering:
+There was quite a mixed crowd, but obvioulsy I was by a long way the oldest in the room not that I really cared. I reckoned I could hold my own against these Gen-Zers, I was confident my experience and sheer determination wod carry me through...... but to be honest I had no clue what it was going to be like.
 
-- Advanced Statistics (I can barely do my taxes)
-- Linear Algebra (I thought algebra was already linear?)
-- Machine Learning Algorithms (at least I know what a machine is)
-- Neural Networks (something about brains and computers?)
+The front few rows were, oddly, filled almost entirely with Chinese students each row of seats, raised slightly higher than the row below it - more on that later.
 
-I looked around the room. Everyone was nodding thoughtfully. I was nodding too, but more in a "please don't call on me" kind of way.
+IN walked the lecturer, a short Chinese man grinning from ear to ear. After trying out a few different whiteboard pens, he wrote his name on one of the whiteboards and basically just jumped straight in to proceeedings. This was when the first red flag started flashing in my head. Thos was no revisoin course. This was practise problems. There was zero theory - this was all stuff we were expected to know already!! Foundation Course my ar*e!!
 
-## Meeting My Cohort
+Fortunately I knew Probability reasinably well so I was able to follow for the first 30 minutes, but at one stage the Prof looked at his watch and must have realised he needed to speed up due to time constraints.
 
-During the break, I tried to make conversation:
+And boy did he speed up!
 
-**Me**: "So, what's your background?"
+The Warning lights in my heads started to flash brighter and faster now. He was a man possessed, racing through topics I'd never even heard of. It was so ridiculous I actually started laughing to myself. I looked around the levture theater to see what others were thinking...... they all seemed to be following along and some were even able to answer questions the Prof asked!
 
-**Classmate**: "Oh, I did my undergrad in Mathematics at Cambridge, then worked at DeepMind for two years."
+"Oh shit", I said to myself "what the f*ck have you gotten yourself into......"
 
-**Me**: "Cool, cool... I once got an A in high school math?"
+------------------------
+-->
+There I was, two weeks before starting my MSc, sitting in a "Foundation Course" in Statistics at University College London. Perfect, I thought. I'd been revising probability for three weeks and—looking at the course topics—I was confident this would be a gentle warm-up. After all, the last time I'd studied properly was 1997, when I proudly graduated with my Engineering degree (I do love telling people that; it sounds properly rigorous, full of maths and problem-solving).
 
-Turns out, approximately 85% of my cohort has a mathematics degree. The other 15% have degrees in computer science or physics. And then there's me, who thought "matrix multiplication" was something from The Matrix movies.
+I was determined to do the full student thing. I cycled in and prepared sandwiches — genuinely unprecedented in 21 years. Since moving to London in 2003, I'd hemorrhaged money to Pret A Manger, but not today. Today I had a flask and homemade cereal bars. I was going to be disciplined. I was going to be prepared.
 
-## First Assignment
+The lecture theater was modern, all tiered seating and whiteboards—thank God, no overhead projectors. The front few rows were mysteriously packed with Chinese students. (I'd later learn, to my astonishment, why)
 
-We got our first assignment before we'd even had our first proper lecture. It was "just to gauge our level."
+In walked the lecturer: a compact Chinese man radiating absolute joy. He tried out several whiteboard pens with the intensity of an artist selecting a brush, scrawled his name, and then... just started. No introduction. No "welcome." Certainly no theory. We were expected to already know everything.
 
-I'm fairly certain they're going to gauge that my level is "how did this person even get accepted?"
+Foundation Course, my arse.
 
-## The Bright Side
+I managed the first thirty minutes on pure probability adrenaline. Then the lecturer glanced at his watch, realized he was running late, and shifted into a gear I didn't know existed. The man became a physics experiment in acceleration. Topics I'd never heard of flew past. It was so ridiculous I actually laughed out loud.
 
-But hey, at least I'm not the only one feeling out of depth. I met another student who looked just as panicked as me. We made a pact: we're going to survive this together, even if we have to learn calculus from YouTube at 2 AM.
+I looked around. Everyone else was following along. Some were even answering his questions.
 
-*To be continued...*
+"Oh shit," I whispered to myself. "What the hell have you gotten yourself into Mr Lowry?"
