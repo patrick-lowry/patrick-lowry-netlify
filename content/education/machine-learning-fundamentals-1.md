@@ -12,19 +12,27 @@ bannerImage:
 ---
 
 # Introduction
-If you're shown a picture of a cat, the chances are you'll be able to tell its a cat rather than a dog. But how did you come to know the difference? Were you born with the ability to identify different animals? Of course not - in school, you were probably shown pictures of various animals with the name of the animal written underneath it. Or perhaps you were at the zoo and when you pointed at an animal someone would have told you what it was. You can imagine that, deep in your brain, connections would have been made between your neurons, somehow storing (or encoding), what a cat is and what a dog is, and so on. You can also imagine that every time you see a cat, the visual signals from your eye somehow 'match' the encodings you learned as a child that match what you learned a cat looks like.
+If you're shown a picture of a lion, how do you know its a lion? Were you born with the ability to identify different animals? Of course not. In school, you were probably shown pictures of various animals with the name of the animal written underneath it. Maybe you were a quick learner and learnt to identify animals very quickly, but its more likely that you were shown a pictures a few times until you could remember it.
 
-This process of learning in humans is very similar to how Machine Learning works - in Machine Learning terminology, this is an example of 'Supervised Learning'. In order to identify a cat in an image, a Machine Learning model must first build some representation of what an image of a cat 'looks' like. This requires feeding the model with many images of cats - the model then builds a representation of what the pixels in an image of a cat look like. The representation of a cat will be slightly different to that of a dog and that of a sheep, and so on. Once the model is set, when a model is presented with an image of a cat it hasn't seen before, it will be able to match the pattern of pixels in the image with the pixel patterns it has stored as representing a cat. Simple!
+What's happening during this learning process??? You can imagine that, deep in your brain, connections were being made between your neurons, somehow storing (or encoding), what a lion is, what a tiger is etc. The next time you see an animal that you've learned you can imagin that the visual signals from your eye would 'match' the encodings you learned as a child for what that animal looks like.
+
+This process of learning in humans is very similar to how Machine Learning works - in fact, in Machine Learning terminology, this is an example of 'Supervised Learning'. 
+
+So how does a machine 'learn' what a lion looks like? Just like for humans, a machine learning model for image recognition learns by being shown many different labelled images of animals, but rather than building relationships between neurons, it builds a mathematical model consisting of a network of inter-connected 'nodes' - the strength of connections between nodes is slightly different for different animals. 
+
+It can take make thousands of images for this interconnected network to be built. Once learning is complete, we say the model has been 'trained' and hopefully, when is presented with an image of a lion that was not in the imges used in training, if the network has been properly set, it should be able to determine that the pattern of pixels in the image match the patterns it has stored as representing a lons. Simple!
 
 This example introduces some key Machine Learning concepts:
 
-- **Model** To use the example above, the model is best thought of as how different animal images are represented and associated with that animal. In humans, the model consists of the neural connections in our brains that somehow encode what a cat or dog looks like. In Machine Learning, the model is actually a very complex, multi-dimensional network of numbers and weights - but the relationships also just encode how the pixels in a dog image relate to each other. The relationships will be slightly different for a cat versus a dog.
-- **Training** This is the process by which the model is created - ie how relationships are built. In Supervised Learning this is achieved by feeding in 1000's of images of animals into the Machine Learning system, each image is labelled with the type of animal that's in the picture. In this way the training is 'supervised' - because the model is being 'told' what each image is. What many people don't understand is that, once trained, the model becomes fixed. The numbers and weights do not change
-- **Inference** - Inference refers to the process of using the trained model on a new piece of data to help identify a new piece of data. So for example, an image recognition model that has been trained on images of animals should be able to identify a cat in an image it has never seen before.
+- **Model** To use the example above, the model is best thought of as how images of different animals are stored in a network and associated with that animal. In humans, the model consists of the neural connections in our brains that somehow encode what a cat or dog looks like. I
+
+- **Training (Learning)** This is the process by which the model is created - i.e. how relationships are built. In Supervised Learning this is achieved by feeding in 1000's of images of animals into the Machine Learning system, each image is labelled with the type of animal that's in the picture. This allows the machine learning system to build a representation of what a 'lion' is versus a 'cat', for instance.
+
+Note that training is a one-off activity, once a model has finished training, the relationships are set and do not change.
+
+- **Inference** - Inference refers to the process of using the trained model on a new piece of data to identify what that new piece of data is. So for example, an image recognition model that has been trained on images of animals should be able to identify a lion in an image it has never seen before.
 
 # Types of Learning
-Machines 'learn' during the training phase - recall that the purpose of training is to build the relationships between large quantities of data so that these relationships can be later used in inference. Once relationships are set they do not change (unless you re-train the model). 
-
 There are three ways Machine's 'learn' : Supervised Learning, Unsupervised Learning and Reinforcement Learning.
 
 ### Supervised Learning
