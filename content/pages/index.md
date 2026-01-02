@@ -136,5 +136,5 @@ sections:
           - pl-4
           - pr-4
         textAlign: left
-    subtitle: "Blog - My MSc Experience"
+    subtitle: "Returning to University aged 51!"
 ---

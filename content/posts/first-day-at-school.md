@@ -4,7 +4,7 @@ title: First Day at School
 date: 2023-09-01T00:00:00.000Z
 series: My MSc Experience
 excerpt: >-
-  Walking into the building on the first day, clutching my brand new notebook and feeling like I'd accidentally wandered into a NASA conference.
+  Walking into the lecture theatre on day one with my notepad and 4-colour blue and white Bic pen in hand, I wondered what I was getting myself into.
 thumbnailImage: /images/bg2.jpg
 ---
 
@@ -33,7 +33,7 @@ The Warning lights in my heads started to flash brighter and faster now. He was 
 
 ------------------------
 -->
-September 2023
+September 19, 2023
 There I was, two weeks before starting my MSc, sitting in a "Foundation Course" in Statistics at University College London. Perfect, I thought. I'd been revising probability and calculus for the last three weeks and, looking at the course topics, I was confident this would be a gentle warm-up - an aperitif to the main course.
 
 I was determined to go full student (not least because I'd just forked out £18k in fees and still had a mortgage to pay!). I cycled 20km into college, determined not to pay £6 each way for the train. I'd made a coffee in a flask - that's anbother £3 saved. I'd even prepared my own sandwiches — genuinely unprecedented in 21 years. Since moving to London in 2003, God only knows how much cash I'd haemorrhaged to Pret A Manger..... but not today! Today I was back in full on student mode (apart from the mortgage of course!).

@@ -4,7 +4,7 @@ title: Why are you doing this?
 date: 2023-09-01T00:00:00.000Z
 series: My MSc Experience
 excerpt: >-
-  Walking into the building on the first day, clutching my brand new notebook and feeling like I'd accidentally wandered into a NASA conference.
+  I was bored; learning nothing new at work..... I decidced to take the plunge
 thumbnailImage: /images/bg2.jpg
 ---
 
