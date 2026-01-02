@@ -33,18 +33,19 @@ The Warning lights in my heads started to flash brighter and faster now. He was 
 
 ------------------------
 -->
-There I was, two weeks before starting my MSc, sitting in a "Foundation Course" in Statistics at University College London. Perfect, I thought. I'd been revising probability for three weeks and—looking at the course topics—I was confident this would be a gentle warm-up. After all, the last time I'd studied properly was 1997, when I proudly graduated with my Engineering degree (I do love telling people that; it sounds properly rigorous, full of maths and problem-solving).
+September 2023
+There I was, two weeks before starting my MSc, sitting in a "Foundation Course" in Statistics at University College London. Perfect, I thought. I'd been revising probability and calculus for the last three weeks and, looking at the course topics, I was confident this would be a gentle warm-up - an aperitif to the main course.
 
-I was determined to do the full student thing. I cycled in and prepared sandwiches — genuinely unprecedented in 21 years. Since moving to London in 2003, I'd hemorrhaged money to Pret A Manger, but not today. Today I had a flask and homemade cereal bars. I was going to be disciplined. I was going to be prepared.
+I was determined to go full student (not least because I'd just forked out £18k in fees and still had a mortgage to pay!). I cycled 20km into college, determined not to pay £6 each way for the train. I'd made a coffee in a flask - that's anbother £3 saved. I'd even prepared my own sandwiches — genuinely unprecedented in 21 years. Since moving to London in 2003, God only knows how much cash I'd haemorrhaged to Pret A Manger..... but not today! Today I was back in full on student mode (apart from the mortgage of course!).
 
-The lecture theater was modern, all tiered seating and whiteboards—thank God, no overhead projectors. The front few rows were mysteriously packed with Chinese students. (I'd later learn, to my astonishment, why)
+At this stage I had no student card so didn't have access to the shower facilites...... I ended up getting changed out of my cycling gear in a toilet cubicle. Maybe that's why no-one sat beside me, Lynx only goes so far - lol!
 
-In walked the lecturer: a compact Chinese man radiating absolute joy. He tried out several whiteboard pens with the intensity of an artist selecting a brush, scrawled his name, and then... just started. No introduction. No "welcome." Certainly no theory. We were expected to already know everything.
+I walked into the lecture theater full of curiosity. I had finished my Bachelors in Engineering in 1997 - 26 years previously! How much would have things changed since then? Hopefully we've moved on from the days of the overhead projector! Do people still take notes? There used to be a cottage industry of note-sharing when I was last in college, the photocopiers would be working overtime copying the notes of the person with the clearest writing 4 weeks before exams. How would things have changed?
 
-Foundation Course, my arse.
+The lecture theatre was modern with tiered seating and whiteboards behind a lectern. Thankfully there were no overhead projectors or blackboards. The front few rows were mysteriously packed with Chinese students - each with a full array of electronic devices already setup (more on that later). The remaining students were distributed around the room - everyone looked a bit anxious but no one looked at me and mistook me for the lecturer - a good start!
 
-I managed the first thirty minutes on pure probability adrenaline. Then the lecturer glanced at his watch, realized he was running late, and shifted into a gear I didn't know existed. The man became a physics experiment in acceleration. Topics I'd never heard of flew past. It was so ridiculous I actually laughed out loud.
+In walked the prof, a compact Chinese man radiating absolute joy. He immediately tried out several whiteboard pens but as is the practice almost everywhere in the world where there's a whiteboard, hardly any of the pens worked! Eventually he gave up and I think he ended up choosing the worst one! He welcomed us briefly, introduced and then he was off....... No introduction to the course, no list of topics, absolutely no theory. This session was only going to go through answers to questions we'd been sent earlier - but with limited explanation...... it was clear we were expected to already know everything!!! Foundation Course, my ar*e!!
 
-I looked around. Everyone else was following along. Some were even answering his questions.
+I managed to understand the first thirty minutes.... just about. But then our jolly lecturer glanced at his watch, realized he was running late, and shifted up about 3 gears! He was a man possessed. He'd write some formula on the whiteboard to answer a question and very now and again he's turn around and say "yes?" - as if to check with us that it made sense, but rather than wait for anyone to ask for clarification, he;d just turn back to the whitebord and continue. Topics I'd never heard of flew past. It was so ridiculous I actually laughed to myself. Looking around, everyone else was following along, nodding or even looking bored!
 
 "Oh shit," I whispered to myself. "What the hell have you gotten yourself into Mr Lowry?"

@@ -124,8 +124,8 @@ sections:
     variant: variant-b
     posts:
       - content/posts/first-day-at-school.md
-      - content/posts/why-does-everyone-have-a-maths-degree.md
-      - content/posts/oh-my-god-at-least-i-speak-the-language.md
+      - content/posts/why-are-you-doing-this.md
+      - content/posts/bayesian-confusion.md
     styles:
       self:
         height: auto
