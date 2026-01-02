@@ -2,7 +2,7 @@
 type: PostLayout
 title: Why are you doing this?
 date: 2023-09-01T00:00:00.000Z
-series: My MSc Experience
+series: Machine Learning MSc in my 50's
 excerpt: >-
   I was bored; learning nothing new at work..... I decidced to take the plunge
 thumbnailImage: /images/bg2.jpg

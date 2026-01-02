@@ -2,7 +2,7 @@
 type: PostLayout
 title: First Day at School
 date: 2023-09-01T00:00:00.000Z
-series: My MSc Experience
+series: Machine Learning MSc in my 50's
 excerpt: >-
   Walking into the lecture theatre on day one with my notepad and 4-colour blue and white Bic pen in hand, I wondered what I was getting myself into.
 thumbnailImage: /images/bg2.jpg

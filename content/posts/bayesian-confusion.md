@@ -2,7 +2,7 @@
 type: PostLayout
 title: Bayesian Confusion
 date: 2023-09-01T00:00:00.000Z
-series: My MSc Experience
+series: Machine Learning MSc in my 50's
 excerpt: >-
   Reality dawns.
 thumbnailImage: /images/bg2.jpg
