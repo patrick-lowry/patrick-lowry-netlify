@@ -2,9 +2,9 @@
   "name": "personal-site",
   "version": "0.2.0",
   "scripts": {
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev -p 3001\"",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 3001"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.12",
