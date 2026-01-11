@@ -1,59 +1,67 @@
 ---
 type: SimpleProjectLayout
-title: Hugging Face Agents
+title: Hugging Face Agents Course
 date: 2024-06-15T00:00:00.000Z
-subheader: AI Research Project
-description: >-
-  Development of intelligent AI agents using Hugging Face Transformers, implementing multi-modal capabilities and custom fine-tuning for specific enterprise use cases.
+# For Home page and Project Listing page
+subheader: LLM Agents course
 thumbnailImage: /images/bg2.jpg
 shortDescription: >-
-  Development of intelligent AI agents using Hugging Face Transformers, implementing multi-modal capabilities and custom fine-tuning for specific enterprise use cases.
-bannerImage: /images/bg2.jpg
+  Covers RAG, MCP, Multi-Agents as well as LangChain and LamaIndex
+
+description: >-
+  The Hugging Face agents course covers all aspects of agent integration
+  including RAG, MCP and Multi-Agents. Hugging Face's own smolagents framework
+  is covered as well as LangChain and LamaIndex. The end project requires
+  writing agents for evaluation against the GAIA benchmark - designed to
+  evaluate AI assistants on real-world tasks that require a combination of core
+  capabilities.
+
+bannerImage:
 ---
 
 ## Overview
 
-Advanced AI agent development project leveraging Hugging Face's transformer ecosystem to create intelligent, multi-modal agents capable of complex reasoning and task execution in enterprise environments.
+The Hugging Face agents course covers all aspects of agent integration
+  including RAG, MCP and Multi-Agents. Hugging Face's own smolagents framework
+  is covered as well as LangChain and LamaIndex. The end project requires
+  writing agents for evaluation against the GAIA benchmark - designed to
+  evaluate AI assistants on real-world tasks that require a combination of core capabilities.
 
 ## Technical Implementation
 
 **AI Agent Architecture:**
-- Hugging Face Transformers for foundation model integration
-- Custom agent framework with tool-calling capabilities
-- Multi-modal processing (text, image, audio) with unified interfaces
-- Fine-tuning pipeline for domain-specific adaptations
+
+* Hugging Face smolagents platform for foundation model integration
+* Custom tool implementation and integration
+* Multi-modal processing (text, image, audio, video) to solve corss-domain tasks using Qwen, GPT, Anthropic and Gemini models
 
 **Core Technologies:**
-- PyTorch for deep learning model implementation
-- Hugging Face Hub for model versioning and deployment
-- LangChain integration for advanced agent workflows
-- Docker containerization for scalable deployment
 
-**Model Fine-tuning:**
-- Parameter-efficient fine-tuning (LoRA, QLoRA) for resource optimization
-- Custom dataset preparation and augmentation pipelines
-- Distributed training setup for large model handling
-- Performance monitoring and automated evaluation metrics
+* Python
+* Hugging Face smolagents
+* LangChain
+* LamaIndex
+
 
 ## Key Features
 
-- **Multi-Modal Agents:** Seamless integration of text, vision, and audio processing capabilities
-- **Tool Integration:** Dynamic tool calling with external API integrations
-- **Custom Fine-tuning:** Domain-specific model adaptations for enterprise use cases
-- **Scalable Deployment:** Production-ready containerized deployment with monitoring
+* **Multi-Modal Agents:** Seamless integration of text, vision, and audio processing capabilities
+* **Tool Integration:** Dynamic tool calling with external API integrations
+* **Custom Fine-tuning:** Domain-specific model adaptations for enterprise use cases
+* **Scalable Deployment:** Production-ready containerized deployment with monitoring
 
 ## Technical Challenges Solved
 
-- **Model Efficiency:** Implementing quantization and pruning for production deployment
-- **Context Management:** Advanced memory management for long conversation contexts
-- **Tool Orchestration:** Dynamic tool selection and execution based on user intent
-- **Safety & Alignment:** Implementing guardrails and content filtering mechanisms
+* **Model Efficiency:** Implementing quantization and pruning for production deployment
+* **Context Management:** Advanced memory management for long conversation contexts
+* **Tool Orchestration:** Dynamic tool selection and execution based on user intent
+* **Safety & Alignment:** Implementing guardrails and content filtering mechanisms
 
 ## Enterprise Applications
 
-- **Customer Service Automation:** Intelligent chatbots with escalation capabilities
-- **Document Processing:** Automated analysis and summarization of technical documents
-- **Code Generation:** Context-aware programming assistance and code review
-- **Data Analysis:** Natural language interface for complex data querying and visualization
+* **Customer Service Automation:** Intelligent chatbots with escalation capabilities
+* **Document Processing:** Automated analysis and summarization of technical documents
+* **Code Generation:** Context-aware programming assistance and code review
+* **Data Analysis:** Natural language interface for complex data querying and visualization
 
 This project showcases cutting-edge AI development skills, production ML deployment experience, and practical application of transformer architectures in real-world scenarios.

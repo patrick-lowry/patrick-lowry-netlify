@@ -1,18 +1,15 @@
 ---
 type: SimpleProjectLayout
-title: Non Linear Classification
+title: Non-Linear Classification
 date: 2024-08-10T00:00:00.000Z
 subheader: >-
   Exploring various transformations in order to classify data that's not
   linearly separable in its natural form.
 description: >-
-  Implementation of advanced kernel methods for non-linear classification
-  problems using SVM, RBF, and custom kernel functions with performance
-  optimization.
+  
 thumbnailImage: /images/non-linear-classification.png
 shortDescription: >-
-  Investigates various methods for transforming data that's not linearly
-  separable, such that it can be classified. Includes SVM and the RBF kernel
+  How to classify linearly-non-separable data by first transforming it.
 bannerImage: /images/non-linear-classification.png
 ---
 
