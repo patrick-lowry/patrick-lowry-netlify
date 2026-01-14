@@ -2,13 +2,14 @@
 type: PageLayout
 title: Home
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg1.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 75
+# Removed background image to match info page black background
+# backgroundImage:
+#   type: BackgroundImage
+#   url: /images/bg1.jpg
+#   backgroundSize: cover
+#   backgroundPosition: center
+#   backgroundRepeat: no-repeat
+#   opacity: 75
 sections:
   - elementId: ""
     colors: colors-f
@@ -116,19 +117,19 @@ sections:
     actions:
       - type: Link
         label: See all blog posts
-        url: /blog
+        url: /blog-msc
     showDate: true
     showExcerpt: true
     showFeaturedImage: true
     showReadMoreLink: true
     variant: variant-b
     posts:
-      - content/posts/first-day-at-school.md
-      - content/posts/why-are-you-doing-this.md
-      - content/posts/bayesian-confusion.md
-      - content/posts/apples.md
-      - content/posts/i-broke-the-auto-grader.md
-      - content/posts/who-are-they-talking-to.md
+      - content/blog-msc/first-day-at-school.md
+      - content/blog-msc/why-are-you-doing-this.md
+      - content/blog-msc/bayesian-confusion.md
+      - content/blog-msc/apples.md
+      - content/blog-msc/i-broke-the-auto-grader.md
+      - content/blog-msc/who-are-they-talking-to.md
     styles:
       self:
         height: auto
@@ -139,5 +140,5 @@ sections:
           - pl-4
           - pr-4
         textAlign: left
-    subtitle: "Returning to University aged 51!"
+    subtitle: "Blog - Returning to University after 27 years...."
 ---

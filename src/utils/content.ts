@@ -10,7 +10,10 @@ import { PAGE_MODEL_NAMES, PageModelType } from '@/types/generated';
 const contentBaseDir = 'content';
 const pagesBaseDir = contentBaseDir + '/pages';
 const projectsBaseDir = contentBaseDir + '/projects';
-const postsBaseDir = contentBaseDir + '/posts';
+const postsBaseDir = contentBaseDir + '/posts'; // Legacy - removed
+const blogMscBaseDir = contentBaseDir + '/blog-msc';
+const blogOpinionBaseDir = contentBaseDir + '/blog-opinion';
+const blogTutorialsBaseDir = contentBaseDir + '/blog-tutorials';
 const educationBaseDir = contentBaseDir + '/education';
 
 const allReferenceFields = {};
@@ -98,12 +101,18 @@ function contentUrl(obj: types.ContentObject) {
         url = fileName.slice(pagesBaseDir.length);
     } else if (fileName.startsWith(projectsBaseDir)) {
         url = '/projects' + fileName.slice(projectsBaseDir.length);
-    } else if (fileName.startsWith(postsBaseDir)) {
-        url = '/posts' + fileName.slice(postsBaseDir.length);
+    } else if (fileName.startsWith(blogMscBaseDir)) {
+        url = '/blog-msc' + fileName.slice(blogMscBaseDir.length);
+    } else if (fileName.startsWith(blogOpinionBaseDir)) {
+        url = '/blog-opinion' + fileName.slice(blogOpinionBaseDir.length);
+    } else if (fileName.startsWith(blogTutorialsBaseDir)) {
+        url = '/blog-tutorials' + fileName.slice(blogTutorialsBaseDir.length);
     } else if (fileName.startsWith(educationBaseDir)) {
         url = '/education' + fileName.slice(educationBaseDir.length);
+    } else if (fileName.startsWith(postsBaseDir)) {
+        url = '/posts' + fileName.slice(postsBaseDir.length);
     } else {
-        console.warn('Content file', fileName, 'is not under pages, projects, posts, or education directory');
+        console.warn('Content file', fileName, 'is not under pages, projects, blog-*, or education directory');
         return;
     }
 

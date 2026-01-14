@@ -2,13 +2,14 @@
 type: ProjectFeedLayout
 title: Education
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg1.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 50
+# Removed background image to match info page black background
+# backgroundImage:
+#   type: BackgroundImage
+#   url: /images/bg1.jpg
+#   backgroundSize: cover
+#   backgroundPosition: center
+#   backgroundRepeat: no-repeat
+#   opacity: 50
 projectFeed:
   type: ProjectFeedSection
   colors: colors-f

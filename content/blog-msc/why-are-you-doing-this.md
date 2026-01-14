@@ -1,8 +1,9 @@
 ---
 type: PostLayout
 title: Why are you doing this?
-date: 2023-09-01T00:00:00.000Z
+date: 2023-09-02T00:00:00.000Z
 series: Machine Learning MSc in my 50's
+seriesOrder: 2
 excerpt: >-
   I was bored; learning nothing new at work..... I decidced to take the plunge
 thumbnailImage: /images/bg2.jpg

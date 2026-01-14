@@ -26,7 +26,7 @@
             {
                 "type": "Link",
                 "label": "Blog",
-                "url": "/blog"
+                "url": "/blog-msc"
             }
         ],
         "socialLinks": [
@@ -49,7 +49,7 @@
         "primaryLinks": [
             {
                 "type": "Link",
-                "label": "Info",
+                "label": "About Me",
                 "url": "/info",
                 "altText": ""
             },
@@ -68,13 +68,13 @@
             {
                 "type": "Link",
                 "label": "Blog",
-                "url": "/blog",
+                "url": "/blog-msc",
                 "altText": ""
             },
             {
                 "type": "Link",
-                "label": "Contact",
-                "url": "mailto:thisismyemail.@myemail.me",
+                "label": "LinkedIn",
+                "url": "http://www.linkedin.com/in/patrick-lowry-london",
                 "altText": ""
             },
             {
@@ -86,12 +86,7 @@
         ],
         "contacts": {
             "type": "ContactBlock",
-            "title": "Contact details",
-            "phoneNumber": "850-123-5021",
-            "phoneAltText": "My phone number",
-            "email": "thisismyemail.@myemail.me",
-            "emailAltText": "My email",
-            "address": "312 Lovely Street, Brooklyn, NY, 123456",
+            "address": "London, United Kingdom",
             "addressAltText": "My address"
         },
         "copyrightText": "Powered by [Netlify](https://www.netlify.com/)",

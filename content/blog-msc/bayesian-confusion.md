@@ -1,8 +1,9 @@
 ---
 type: PostLayout
 title: Bayesian Confusion
-date: 2023-09-01T00:00:00.000Z
+date: 2023-10-01T00:00:00.000Z
 series: Machine Learning MSc in my 50's
+seriesOrder: 3
 excerpt: >-
   Reality dawns.
 thumbnailImage: /images/bg2.jpg
