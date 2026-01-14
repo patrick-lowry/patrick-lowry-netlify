@@ -19,11 +19,6 @@ export default defineConfig({
     outputFolder: "admin",
     publicFolder: "public",
   },
-  ui: {
-    theme: {
-      mode: "dark", // or "light" or "auto"
-    },
-  },
   media: {
     tina: {
       mediaRoot: "images",
