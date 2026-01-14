@@ -127,9 +127,6 @@ sections:
       - content/blog-msc/first-day-at-school.md
       - content/blog-msc/why-are-you-doing-this.md
       - content/blog-msc/bayesian-confusion.md
-      - content/blog-msc/apples.md
-      - content/blog-msc/i-broke-the-auto-grader.md
-      - content/blog-msc/who-are-they-talking-to.md
     styles:
       self:
         height: auto

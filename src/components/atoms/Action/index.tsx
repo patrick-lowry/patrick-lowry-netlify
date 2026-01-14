@@ -27,7 +27,7 @@ export default function Action(props) {
         style === 'secondary' && baseClasses.push('rounded-full');
         baseClasses.push('border-2 border-current hover:bottom-shadow-6 hover:-translate-y-1.5');
     } else {
-        baseClasses.push('uppercase bottom-shadow-1 hover:bottom-shadow-5');
+        baseClasses.push('uppercase');
     }
 
     return (

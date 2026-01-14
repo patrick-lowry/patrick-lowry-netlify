@@ -68,8 +68,8 @@ function ProjectGrid(props) {
     return (
         <div
             className={classNames('grid gap-y-12', {
-                'md:grid-cols-2': variant === 'variant-a',
-                'md:grid-cols-3': variant === 'variant-b',
+                'md:grid-cols-2 md:items-stretch': variant === 'variant-a',
+                'md:grid-cols-3 md:items-stretch': variant === 'variant-b',
                 'justify-center': variant === 'variant-c',
                 'gap-x-6 lg:gap-x-8': variant !== 'variant-c',
                 'mt-12': hasTopMargin
@@ -79,7 +79,7 @@ function ProjectGrid(props) {
                 const displayImage = project.thumbnailImage || project.featuredImage;
                 const displayDescription = project.shortDescription || project.description;
                 return (
-                    <Link key={index} href={project} className="block max-w-3xl pb-10 border-b border-current group">
+                    <Link key={index} href={project} className="flex flex-col h-full max-w-3xl pb-10 border-b border-current group">
                         {showFeaturedImage && displayImage && (
                             <div className="w-full mb-6 overflow-hidden aspect-3/2">
                                 <ImageBlock
@@ -96,7 +96,7 @@ function ProjectGrid(props) {
                         <TitleTag className="text-xl sm:text-2xl">{project.title}</TitleTag>
                         {showDescription && displayDescription && <p className="mt-5 text-base">{displayDescription}</p>}
                         {showReadMoreLink && (
-                            <div className="mt-8">
+                            <div className="mt-auto pt-8">
                                 <span className="inline-flex text-xl transition rounded-full p-4 border-2 border-current group-hover:bottom-shadow-6 group-hover:-translate-y-1.5">
                                     <ArrowUpRightIcon className="fill-current w-icon h-icon" />
                                 </span>
