@@ -44,14 +44,14 @@ type ResolverFunction = (props: ContentObject, allData: ContentObject[]) => Cont
 
 const PropsResolvers: Partial<Record<ContentObjectType, ResolverFunction>> = {
     PostFeedLayout: (props, allData) => {
-        const allPosts = getAllPostsSorted(allData);
+        const allPosts = getAllPostsSorted(allData, props.__metadata?.urlPath);
         return {
             ...(props as PostFeedLayout),
             items: allPosts
         };
     },
     RecentPostsSection: (props, allData) => {
-        const recentPosts = getAllPostsSorted(allData).slice(0, (props as RecentPostsSection).recentCount || 3);
+        const recentPosts = getAllPostsSorted(allData, undefined).slice(0, (props as RecentPostsSection).recentCount || 3);
         return {
             ...props,
             posts: recentPosts
@@ -128,8 +128,22 @@ const PropsResolvers: Partial<Record<ContentObjectType, ResolverFunction>> = {
     }
 };
 
-function getAllPostsSorted(objects: ContentObject[]) {
-    const all = objects.filter((object) => object.__metadata?.modelName === 'PostLayout') as PostLayout[];
+function getAllPostsSorted(objects: ContentObject[], feedUrlPath?: string) {
+    let all = objects.filter((object) => object.__metadata?.modelName === 'PostLayout') as PostLayout[];
+
+    // If a feed URL path is provided, filter posts to only those in the same directory
+    // e.g., /blog-msc feed should only show posts from /blog-msc/
+    if (feedUrlPath) {
+        all = all.filter((post) => {
+            const postPath = post.__metadata?.urlPath;
+            if (!postPath) return false;
+            // Extract the parent directory from the post path
+            // e.g., /blog-msc/test-1 -> /blog-msc
+            const postDir = postPath.substring(0, postPath.lastIndexOf('/'));
+            return postDir === feedUrlPath;
+        });
+    }
+
     const sorted = all.sort((postA, postB) => {
         // If both posts have seriesOrder, sort by that (ascending - lowest first)
         const orderA = (postA as any).seriesOrder;
