@@ -1,0 +1,17 @@
+---
+type: SimpleProjectLayout
+title: Sports performance analysis
+date: 2024-10-01T00:00:00.000Z
+subtitle: 'A cycling analytics platform, fully integrated with strava and including machine learning insights.'
+thumbnailImage: /images/cycling-analytics.png
+bannerImage: /images/cycling-analytics.png
+---
+
+## Key Features
+
+* Full strava integration
+* Intuitive activity search
+* Machine learning insights
+* Performance analytics
+
+![Cycling Dashboard](/images/cycling-analytics.png)

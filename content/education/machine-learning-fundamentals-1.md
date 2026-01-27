@@ -2,12 +2,8 @@
 type: SimpleProjectLayout
 title: ML Fundamentals Part 1
 date: 2024-01-15T00:00:00.000Z
-subheader: A high level overview
-description: >-
-  A high-level introduction to machine learning concepts - part 1
+subtitle: 'A 10,000 ft introduction to Machine Learning.'
 thumbnailImage:
-shortDescription: >-
-  A 10,000 ft introduction to Machine Learning.
 bannerImage:
 ---
 

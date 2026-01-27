@@ -55,7 +55,7 @@ function ProjectGrid(props) {
         variant,
         projects = [],
         showDate,
-        showDescription,
+        showSubtitle,
         showFeaturedImage,
         showReadMoreLink,
         hasTopMargin,
@@ -77,7 +77,6 @@ function ProjectGrid(props) {
         >
             {projects.map((project, index) => {
                 const displayImage = project.thumbnailImage || project.featuredImage;
-                const displayDescription = project.shortDescription || project.description;
                 return (
                     <Link key={index} href={project} className="flex flex-col h-full max-w-3xl pb-10 border-b border-current group">
                         {showFeaturedImage && displayImage && (
@@ -94,7 +93,7 @@ function ProjectGrid(props) {
                             </div>
                         )}
                         <TitleTag className="text-xl sm:text-2xl">{project.title}</TitleTag>
-                        {showDescription && displayDescription && <p className="mt-5 text-base">{displayDescription}</p>}
+                        {showSubtitle && project.subtitle && <p className="mt-3 text-base">{project.subtitle}</p>}
                         {showReadMoreLink && (
                             <div className="mt-auto pt-8">
                                 <span className="inline-flex text-xl transition rounded-full p-4 border-2 border-current group-hover:bottom-shadow-6 group-hover:-translate-y-1.5">
@@ -113,7 +112,7 @@ function ProjectList(props) {
     const {
         projects = [],
         showDate,
-        showDescription,
+        showSubtitle,
         showFeaturedImage,
         showReadMoreLink,
         hasTopMargin,
@@ -131,7 +130,6 @@ function ProjectList(props) {
         >
             {projects.map((project, index) => {
                 const displayImage = project.thumbnailImage || project.featuredImage;
-                const displayDescription = project.shortDescription || project.description;
                 return (
                     <Link key={index} href={project} className="block pb-10 border-b border-current group md:pb-12 md:px-4">
                         <div className="flex flex-col gap-8 md:flex-row md:items-center">
@@ -152,8 +150,8 @@ function ProjectList(props) {
                                     </div>
                                 )}
                                 <TitleTag className="text-xl sm:text-2xl">{project.title}</TitleTag>
-                                {showDescription && displayDescription && (
-                                    <p className="mt-5 text-base">{displayDescription}</p>
+                                {showSubtitle && project.subtitle && (
+                                    <p className="mt-3 text-base">{project.subtitle}</p>
                                 )}
                             </div>
                             {showReadMoreLink && (

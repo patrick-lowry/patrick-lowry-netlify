@@ -1,74 +1,45 @@
 ---
 type: SimpleProjectLayout
-title: Pixel Classification using Bayes Theorem
 date: 2024-05-30T00:00:00.000Z
-subheader: Machine Learning Education
-description: >-
-  Uses an image and its mask to create a simple model to classify a pixel as
-  being either a pixel of skin or not. During training, the provided image is
-  used to create a probability distribution for each pixel type. For inference,
-  this model is then used to determine the probability of a pixel being a pixel
-  of skin or not.
+title: Pixel Classification using Bayes Theorem
+subtitle: >-
+  Uses probability distributions to classify pixels as either being a skin pixel
+  or not
 thumbnailImage: /images/pixel-classification-bayes.png
-shortDescription: >-
-  Uses an image and its mask to train a model to predict the probability of a
-  pixel being either a pixel of skin or not.
 bannerImage: /images/pixel-classification-bayes.png
 ---
 
-## Overview
+This was the first part of an early Machine Vision lab. It's interesting because it illustrates Bayes Theorem in a visually striking way and demonstrates how it's possible (maybe) to classify pixels as one thing or another using probability distributions.
 
-A sophisticated machine learning project implementing Bayesian inference for pixel-level classification in images, with applications in medical imaging, satellite imagery analysis, and computer vision tasks requiring uncertainty quantification.
+Objective
 
-## Technical Implementation
+The objective is to build a simple model based upon Bayes Theorem which, when given the RGB values of any pixel from the image, should be able to determine if that pixel is a skin pixel or not. If you look at the pixels in the raw image you can see how there's quite a variation in their colouring - some are in sunlight, some are in shade. Also, the colour of the guitar body in the bottom right of the image is very similar to the colour of the left hand holding the guitar. Will a simple probability-based model be able to distinguish which pixels are which?
 
-**Bayesian Framework:**
+Inputs
 
-* Naive Bayes classifier implementation for pixel-level features
-* Gaussian Mixture Models for probability distribution modeling
-* Maximum A Posteriori (MAP) estimation for optimal classification
-* Uncertainty quantification through posterior probability analysis
+Two images are provided - a real image and a mask of that same image. In this case, the image is a photo of Bob Dylan holding a guitar and tipping his hat. The mask image is an alternative view of the same Bob Dylan image but with only two colours - yellow and purple. Each yellow pixel in the mask corresponds to a pixel in the photo that's skin.
 
-**Core Technologies:**
+Approach
 
-* NumPy and SciPy for statistical computations and probability distributions
-* Scikit-learn for baseline comparison and validation metrics
-* OpenCV for image preprocessing and feature extraction
-* Matplotlib and Seaborn for comprehensive result visualization
+The approach is to build up two Gaussian probability distributions - one describing the probability distribution of skin-pixels and one describing the probability distribution on non-skin pixels. A Gaussian (normal) distribution is defined by the mean (average) and covariance (spread) of its values - this can be calculated by looping through each of the skin and non-skin pixels. 
 
-**Feature Engineering:**
+These two distributions allow the calculation of the following probabilities:
 
-* Multi-scale texture analysis using Local Binary Patterns (LBP)
-* Color space transformations (RGB, HSV, LAB) for robust feature representation
-* Spatial context integration through neighborhood analysis
-* Statistical moment calculations for texture characterization
+* Distribution 1 (Skin): P\_1(RGB|SKIN) : ie the probability that a pixel represented by its RGB values has come from the distribution of skin pixels
+* Distribution 2 (Non Skin): P\_2(RGB|NOT SKIN) ie the probability that a pixel represented by its RGB values has come from the distribution of non-skin pixels
 
-## Key Features
+Then, using Bayes Theorem, the posterior probability can be calculated of whether, given a pixel is it a skin pixel:  
 
-* **Probabilistic Classification:** Full posterior probability maps for each pixel classification
-* **Uncertainty Quantification:** Confidence measures and prediction intervals for each classification
-* **Multi-class Support:** Extensible framework for arbitrary number of image classes
-* **Real-time Processing:** Optimized implementation for near real-time image segmentation
+* P(SKIN | RGB) = P\_1 (RGB|SKIN) \* P(SKIN) [/ ](/\() P(RGB)
 
-## Technical Challenges Solved
+Where 
 
-* **Class Imbalance:** Adaptive prior probability estimation for unbalanced datasets
-* **Spatial Correlation:** Incorporation of spatial dependencies through Markov Random Fields
-* **Computational Efficiency:** Vectorized operations for large-scale image processing
-* **Noise Robustness:** Outlier detection and robust estimation techniques
+* P(RGB) = P\_1(RGB | SKIN) \* P(SKIN) + P\_2(RGB | NOT SKIN) \* P(NOT SKIN)
 
-## Applications & Results
+P(SKIN) and P(NOT SKIN) are the prior probabilities—the proportion of skin pixels to non-skin pixels in the training mask. For example, if 30% of the mask pixels are yellow (skin), then P(SKIN) = 0.3.
 
-* **Medical Imaging:** Tumor segmentation with confidence intervals for clinical decision support
-* **Satellite Imagery:** Land cover classification with uncertainty maps for environmental monitoring
-* **Quality Control:** Defect detection in manufacturing with probabilistic confidence scores
-* **Scientific Imaging:** Automated cell counting and morphology analysis in microscopy
+Method
 
-## Performance Metrics
+To build the distributions, one simply loops through each pixel in the image and the mask and collects two separate data sets. Set 1 contains the RGB values of pixels whose corresponding mask pixel is yellow (indicating that pixel represents skin). Set 2 does the same but for non-skin pixels. It is then possible to determine the mean vector μ and covariance matrix Σ of all the RGB values in each set - thus providing the parameters required to define each Gaussian distribution.
 
-* Achieved 94.2% pixel-wise accuracy on benchmark medical imaging datasets
-* Uncertainty calibration within 2.1% of true confidence intervals
-* 15x speedup over traditional sliding window approaches through vectorization
-* Robust performance across diverse imaging modalities and acquisition conditions
-
-This project demonstrates deep understanding of probabilistic machine learning, Bayesian inference, and practical implementation of statistical methods for computer vision applications.
+For each pixel, Bayes Theorem is then applied to calculate the posterior probability that a given pixel is from the skin distribution. The resulting probability is displayed in the image on the far right - with different colour intensities indicating the variation in probabilities that a pixel is a skin pixel.

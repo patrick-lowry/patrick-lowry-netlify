@@ -2,20 +2,8 @@
 type: SimpleProjectLayout
 title: Hugging Face Agents Course
 date: 2024-06-15T00:00:00.000Z
-# For Home page and Project Listing page
-subheader: LLM Agents course
+subtitle: 'Covers RAG, MCP, Multi-Agents as well as LangChain and LamaIndex'
 thumbnailImage: /images/bg2.jpg
-shortDescription: >-
-  Covers RAG, MCP, Multi-Agents as well as LangChain and LamaIndex
-
-description: >-
-  The Hugging Face agents course covers all aspects of agent integration
-  including RAG, MCP and Multi-Agents. Hugging Face's own smolagents framework
-  is covered as well as LangChain and LamaIndex. The end project requires
-  writing agents for evaluation against the GAIA benchmark - designed to
-  evaluate AI assistants on real-world tasks that require a combination of core
-  capabilities.
-
 bannerImage:
 ---
 

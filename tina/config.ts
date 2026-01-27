@@ -91,8 +91,12 @@ export default defineConfig({
         name: "education",
         label: "Education Articles",
         path: "content/education",
+        ui: {
+          defaultItem: {
+            type: "SimpleProjectLayout",
+          },
+        },
         fields: [
-          // Basic Information Section
           {
             type: "string",
             name: "type",
@@ -103,6 +107,11 @@ export default defineConfig({
             }
           },
           {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+          },
+          {
             type: "string",
             name: "title",
             label: "Title",
@@ -110,40 +119,17 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "datetime",
-            name: "date",
-            label: "Date",
-          },
-          {
             type: "string",
-            name: "subheader",
-            label: "Subheader",
+            name: "subtitle",
+            label: "Subtitle",
+            description: "Short 1-2 line description displayed in listings and on the article page",
           },
-          {
-            type: "string",
-            name: "description",
-            label: "Description",
-            ui: {
-              component: "textarea"
-            }
-          },
-          // Education List Page Section
           {
             type: "image",
             name: "thumbnailImage",
             label: "Thumbnail Image",
             description: "Displayed in education listings",
           },
-          {
-            type: "string",
-            name: "shortDescription",
-            label: "Short Description",
-            description: "Displayed in education listings",
-            ui: {
-              component: "textarea"
-            }
-          },
-          // Education Page Section
           {
             type: "image",
             name: "bannerImage",
@@ -162,8 +148,12 @@ export default defineConfig({
         name: "project",
         label: "Projects",
         path: "content/projects",
+        ui: {
+          defaultItem: {
+            type: "SimpleProjectLayout",
+          },
+        },
         fields: [
-          // Basic Information Section
           {
             type: "string",
             name: "type",
@@ -174,6 +164,11 @@ export default defineConfig({
             }
           },
           {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+          },
+          {
             type: "string",
             name: "title",
             label: "Title",
@@ -181,40 +176,17 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "datetime",
-            name: "date",
-            label: "Date",
-          },
-          {
             type: "string",
-            name: "subheader",
-            label: "Subheader",
+            name: "subtitle",
+            label: "Subtitle",
+            description: "Short 1-2 line description displayed in listings and on the project page",
           },
-          {
-            type: "string",
-            name: "description",
-            label: "Description",
-            ui: {
-              component: "textarea"
-            }
-          },
-          // Project List Page Section
           {
             type: "image",
             name: "thumbnailImage",
             label: "Thumbnail Image",
             description: "Displayed in project listings",
           },
-          {
-            type: "string",
-            name: "shortDescription",
-            label: "Short Description",
-            description: "Displayed in project listings",
-            ui: {
-              component: "textarea"
-            }
-          },
-          // Project Page Section
           {
             type: "image",
             name: "bannerImage",

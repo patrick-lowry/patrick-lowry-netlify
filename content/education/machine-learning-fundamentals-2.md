@@ -2,12 +2,8 @@
 type: SimpleProjectLayout
 title: ML Fundamentals Part 2
 date: 2024-01-15T00:00:00.000Z
-subheader: Data encoding and vectors
-description: >-
-  A high-level introduction to machine learning concepts.
+subtitle: 'How data is represented in order to train a model.'
 thumbnailImage:
-shortDescription: >-
-  How data is represented in order to train a model.
 bannerImage:
 ---
 
